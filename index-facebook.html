@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <title>Facebook</title>
+
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <ul class="icon">
+            <li><a href="#"><i class="fa-brands fa-facebook facebook-icon"></i></a></li>
+             <li class="search-box-li">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input class="search-bar" type="search" placeholder="Search Facebook">
+            </li>
+        </ul>
+
+        <ul class="main-nav">
+            <li><a onclick="fillIcon()" href="#"><i id="homeIcon" class="fa-regular fa-house-window"></i></a></li>
+            <li><a onclick="fill2Icon()" href="#"><i id="videoIcon" class="fa-regular fa-clapperboard-play"></i></a></li>
+            <li><a onclick="fill3Icon()" href="#"><i id="storeIcon" class="fa-regular fa-store"></i></a></li>
+            <li><a onclick="fill4Icon()" href="#"><i id="groupIcon" class="fa-regular fa-user-group"></i></a></li>
+            <li><a onclick="fill5Icon()" href="#"><i id="gamingIcon" class="fa-regular fa-gamepad"></i></a></li>
+        </ul>
+        
+
+        <ul class="user-info">
+            <li><a href="#"><i class="fa-solid fa-grid"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook-messenger"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-bell"></i>
+                 <h3 class="bell-noti">6</h3>
+            </a></li>
+            <li class="user-info-li">
+                <a href="#">
+                    <img class="user-img" src="imgage/user.jpg" alt="">
+                </a>
+                <div class="red-dot"></div>
+                <div class="down-con">
+                    <div class="down-con2">
+                        <i class="fa-solid fa-angle-down down-icon"></i>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </header>
+
+ <!-- main-body -->
+
+  
+
+
+  
+    <div class="main-body-left">
+        <section class="fb-option">
+         <ul class="body-left-ul">
+             <li>
+                 <img class="user-img2" src="imgage/user.jpg" alt="">
+                  <a href="#">Mohammad Imran</a>
+             </li>
+             <li>
+                <img class="frn-icon" src="imgage/friend (1).png" alt="">
+                
+                 <a href="#">Friends</a>
+             </li>
+             <li>
+                <img class="frn-icon" src="imgage/memories.png" alt="">
+                 <a href="#">Memories</a>
+             </li>
+             <li>
+                <img class="frn-icon" src="imgage/saved.png" alt="">
+                 <a href="#">Saved</a>
+             </li>
+             <li>
+                <img class="frn-icon" src="imgage/groups.png" alt="">
+                 <a href="#">Groups</a>
+             </li>
+             <li>
+                <img class="frn-icon" src="imgage/video.png" alt="">
+                 <a href="#">Video</a>
+             </li>
+               
+     
+               <!-- hidden part -->
+     
+               <ul id="hiddenDiv" class="body-left-ul body-left-ul-hidden">
+         
+                 <li>
+                    <img class="frn-icon" src="imgage/signal.png" alt="">
+                     <a href="#">Ads Manager</a>
+                 </li>
+                 <li>
+                    <img class="frn-icon" src="imgage/planet-earth.png" alt="">
+                     <a href="#">Climate Science Centre</a>
+                 </li>
+                 <li>
+                    <img class="frn-icon" src="imgage/event.png" alt="">
+                     <a href="#">Events</a>
+                 </li>
+                 <li>
+                    <img class="frn-icon" src="imgage/feed.png" alt="">
+                     <a href="#">Feeds</a>
+                 </li>
+                 <li>
+                    <img class="frn-icon" src="imgage/fundraiser.png" alt="">
+                     <a href="#">Fundraisers</a>
+                 </li>
+                 <li>
+                    <img class="frn-icon" src="imgage/gaming.png" alt="">
+                     <a href="#">Gaming video</a>
+                 </li>
+                 <li>
+                    <img class="frn-icon" src="imgage/shop.png" alt="">
+                     <a href="#">Marketplace</a>
+                 </li>
+                 <li>
+                    <img class="frn-icon" src="imgage/messenger.png" alt="">
+                     <a href="#">Messenger</a>
+                 </li>
+                 <li>
+                    <img class="frn-icon" src="imgage/messenger (1).png" alt="">
+                     <a href="#">Messenger Kids</a>
+                 </li>
+                 <li>
+                    <img class="frn-icon" src="imgage/meta.png" alt="">
+                     <a href="#">Meta Business Suite</a>
+                 </li>
+                 <li>
+                    <img class="frn-icon" src="imgage/card.png" alt="">
+                     <a href="#">Orders and pyments</a>
+                 </li>
+                 <li>
+                    <img class="frn-icon" src="imgage/social-media.png" alt="">
+                     <a href="#">Pages</a>
+                 </li>
+                 <li>
+                    <img class="frn-icon" src="imgage/video-game.png" alt="">
+                     <a href="#">Play games</a>
+                 </li>
+                 <li>
+                    <img class="frn-icon" src="imgage/gallery.png" alt="">
+                     <a href="#">Recent ad activity</a>
+                 </li>
+     
+              </ul>
+               
+     
+     
+     
+     
+     
+             <li class="seemorE" id="seeMoreDisplay" onclick="seeMoreItem()">
+                      <a id="new-edit-icon" href="#">
+                        <i class="fa-solid fa-angle-down"></i>
+                      </a>
+                      <a id="SeeMore" class="seeMore" href="#">See more</a>
+             </li>
+             <li id="seeLessDisplay" onclick="seeLessItem()">
+                <a id="new-edit-icon2" href="#">
+                    <i class="fa-solid fa-angle-up"></i>
+                </a>
+              <a id="SeeLess" class="seeMore" href="#">See less</a>
+           
+             </li>
+           
+          </ul>  
+          
+        </section>  
+          
+        <div class="hr"></div>
+ 
+        <section class="fb-sht">
+           <h1 class="fb-sht-title">Your shortcuts</h1>
+         <ul class="body-left-ul">
+             <li>
+                 <img class="user-img2 new-img" src="imgage/procoding.jpg" alt="">
+                  <a href="#">Programming Coding</a>
+             </li>
+             <li>
+                 <img class="user-img2 new-img" src="imgage/batch10.jpg" alt="">
+                  <a href="#">Mission Web Development (Batch 10)</a>
+             </li>
+             <li>
+                 <img class="user-img2 new-img" src="imgage/laptop.jpg" alt="">
+                  <a href="#">Laptop/desktop buy and sell bangladesh</a>
+             </li>
+             <li>
+                 <img class="user-img2 new-img" src="imgage/hero.jpg" alt="">
+                  <a href="#">Programming Hero Community</a>
+             </li>
+             <li>
+                 <img class="user-img2" src="imgage/toto.jpg" alt="">
+                  <a href="#">Toto Company</a>
+             </li>
+         
+               
+     
+               <!-- hidden part -->
+     
+               <ul id="hiddenDivSht" class="body-left-ul body-left-ul-hidden">
+         
+                 <li>
+                     <img class="user-img2" src="imgage/gmt.jpg" alt="">
+                      <a href="#">GMT Creation</a>
+                 </li>
+                 <li>
+                     <img class="user-img2" src="imgage/8.jpeg" alt="">
+                      <a href="#">8 Ball Pool</a>
+                 </li>
+                 <li>
+                     <img class="user-img2" src="imgage/candy.jpeg" alt="">
+                      <a href="#">Candy Crush Saga</a>
+                 </li>
+              </ul>
+               
+     
+     
+     
+     
+     
+             <li id="seeMoreDisplaySht" onclick="seeMoreItemSht()">
+                <a id="new-edit-icon3" href="#">
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+              <a id="SeeMore2" class="seeMore" href="#">See More</a>
+             </li>
+             <li id="seeLessDisplaySht" onclick="seeLessItemSht()">
+                <a id="new-edit-icon4" href="#">
+                    <i class="fa-solid fa-angle-up"></i>
+                  </a>
+              <a id="SeeLess2" class="seeMore" href="#">See less</a>
+           
+             </li>
+           
+          </ul>  
+        </section>
+       
+   </div>
+ 
+    <div class="main-body-middle">
+        <section class="story">
+            <section id="storySlidebar" class="story-slidebar">
+                <div class="my-story">
+                    <img class="story-img" src="imgage/user.jpg" alt="">
+                     <h2 class="story-plus"><a href="#">+</a></h2>
+                     <p class="story-p">Create story</p>
+                 </div>
+                <div class="my-story2">
+                    <img class="story2-img" src="imgage/st7.jpg" alt="">
+                    
+                     <div class="story2-invisible-div">
+                        <img class="story2-user-img" src="imgage/st7.jpg" alt="">
+                        <p class="story2-p">Mohammad Imran</p>
+                     </div>
+                 </div>
+                <div class="my-story2">
+                    <img class="story2-img" src="imgage/st6.jpg" alt="">
+                    
+                     <div class="story2-invisible-div">
+                        <img class="story2-user-img" src="imgage/st6.jpg" alt="">
+                        <p class="story2-p">Abu Saleh Noor</p>
+                     </div>
+                 </div>
+                <div class="my-story2">
+                    <img class="story2-img" src="imgage/st5.jpg" alt="">
+                    
+                     <div class="story2-invisible-div">
+                        <img class="story2-user-img" src="imgage/st5.jpg" alt="">
+                        <p class="story2-p">নিঁশিঁ রাঁতেঁরঁ পঁরীঁ </p>
+                     </div>
+                 </div>
+                <div class="my-story2">
+                    <img class="story2-img" src="imgage/st4.jpg" alt="">
+                    
+                     <div class="story2-invisible-div">
+                        <img class="story2-user-img" src="imgage/st4.jpg" alt="">
+                        <p class="story2-p">Md. Jihad Hossen</p>
+                     </div>
+                 </div>
+                <div class="my-story2">
+                    <img class="story2-img" src="imgage/st3.jpg" alt="">
+                    
+                     <div class="story2-invisible-div">
+                        <img class="story2-user-img" src="imgage/st3.jpg" alt="">
+                        <p class="story2-p">Tashfia Jannat Raka</p>
+                     </div>
+                 </div>
+                <div class="my-story2">
+                    <img class="story2-img" src="imgage/st2.jpg" alt="">
+                    
+                     <div class="story2-invisible-div">
+                        <img class="story2-user-img" src="imgage/st2.jpg" alt="">
+                        <p class="story2-p">Abdur Rahman</p>
+                     </div>
+                 </div>
+                <div class="my-story2">
+                    <img class="story2-img" src="imgage/st1.jpg" alt="">
+                    
+                     <div class="story2-invisible-div">
+                        <img class="story2-user-img" src="imgage/st1.jpg" alt="">
+                        <p class="story2-p">Ÿassmine Ėl</p>
+                     </div>
+                 </div>
+              
+            
+            </section>
+        </section>
+        <section class="story-scroll-btn-sec">
+         <div class="story-sec-btn-left">
+            <button class="scroll-btn" id="scrollLeft1" onclick="checkL()">
+                <i class="fa-solid fa-chevron-left"></i></button>
+            <button class="scroll-btn" id="scrollLeft2" onclick="checkL2()">
+                <i class="fa-solid fa-chevron-left"></i></button>
+            <button class="scroll-btn" id="scrollLeft3" onclick="checkL3()">
+                <i class="fa-solid fa-chevron-left"></i></button>
+         </div>
+
+
+
+      <div class="story-sec-btn-right">
+        <button class="scroll-btn" id="scrollRight1" onclick="checkR()">
+            <i class="fa-solid fa-chevron-right"></i></button>
+        <button class="scroll-btn" id="scrollRight2" onclick="checkR2()">
+            <i class="fa-solid fa-chevron-right"></i></button>
+        <button class="scroll-btn" id="scrollRight3" onclick="checkR3()">
+            <i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+        </section>
+
+        <section class="uploading-sec">
+            <div class="upload-con">
+                 <ul class="upload-ul">
+                     <li> <a href="#">
+                        <img class="upload-img-user" src="imgage/user.jpg" alt="">
+                     </a>
+                     <a class="upload-a" href="#">What's on your mind,Mohammad?</a>
+                    </li>
+                    <li><div class="horizontal-line"></div></li>
+                    <li>
+                        <ul class="upload-in-ul">
+                            <a class="feelin-a" href="#">
+                                <li>
+                                    <i class="fa-solid fa-video-plus live-icon"></i>
+                                    Live video</li>
+                            </a>
+
+
+                           <a class="feelin-a" href="#">
+                            <li>
+                                <i class="fa-solid fa-image photo-icon"></i>
+                                Photo/video</li>
+                           </a>
+
+
+                            <a class="feelin-a" href="#">
+                                <li>
+                                    <i class="fa-regular fa-face-laugh face-icon"></i>
+                                    Feeling/activity</li>
+                            </a>
+                        </ul>
+                    </li>
+                 </ul>
+            </div>
+        </section>
+
+         <section class="uploading-str">
+                <div class="str-user-info">
+                    <div class="str-user-info-left">
+                        <a href="#"><img id="user-profile-img" src="imgage/st7.jpg" alt=""></a>
+                        <h2 class="user-profile-name">
+                            Mohammad <span class="post-info-title">
+                                update his profile picture.
+                            </span> <br> <span class="post-time-info">
+                                13 hours ago <i class="fa-solid fa-circle-small middot"></i>
+                                <i id="frnDot" class="fa-solid fa-user-group friendsDot"></i>
+                                <i id="pubDot" class="fa-solid fa-earth-americas friendsDot publicDot"></i>
+                            </span>
+                        </h2>
+                    </div>
+                    <div class="str-user-info-right">
+                        <a href="#"><i class="fa-solid fa-ellipsis post-closing-icon"></i></a>
+                        <a href="#"><i class="fa-regular fa-xmark post-closing-icon"></i></a>
+                    </div>
+                </div>
+                <div class="post-title-con">
+                    <h2 class="post-title">༆༉”ღ”🥰🥀-ღজীবনে সুন্দর ভাবে বেচে থাকার জন্যে বেশি <br>
+                        মানুষের প্রয়োজন হয় না-“ღ”🙂 <br>
+       ღ”🥀-ღ-কখনো কখনো একজন মানুষই আমাদের জীবনের <br>
+              সম্পূর্ণ পৃথিবী হয়ে উঠে-😍ღ⊰࿐•🌸🖤</h2>
+                    <h2 class="post-title"></h2>
+                </div>
+                <div class="post-image-str">
+                    <a class="post-img-a" href="#"><img id="post-img" src="imgage/st7.jpg" alt=""></a>
+                </div>
+                <div class="rections-str">
+                   <div class="who-give-react">
+                    <a class="rec-back recat-bg" href="#"><img class="rec-icon wow-icon" src="imgage/wow.png" alt=""></a>
+                    <a class="rec-back recat-bg1" href="#"><img class="rec-icon love-icon" src="imgage/love.png" alt=""></a>
+                    <a class="rec-back recat-bg2" href="#"><img class="rec-icon like-icon" src="imgage/like.png" alt=""></a>
+                  
+                    <a href="#" class="peoples-name">Mark Zuckerberg, Elon Musk and 1.2M others</a>
+                     </div>
+                   <div class="how-comment">
+                    <a href="#" class="peoples-name">
+                        321K comments &nbsp; 90K shares
+                    </a>
+                    </div>
+                </div>
+                <div class="like-str">
+                    <a class="like-giving-a" href="#">
+                        <i class="fa-regular fa-thumbs-up ok"></i>
+                        Like</a>
+                    <a class="like-giving-a" href="#">
+                        <i class="fa-regular fa-comment ok"></i>
+                        Comment</a>
+                    <a class="like-giving-a" href="#">
+                        <i class="fa-regular fa-share ok"></i>
+                        Share</a>
+                </div>
+                <div class="view-comments-str">
+                    <h1 class="view-comment-text">View more comments</h1>
+                    <section class="comenting-user">
+                         <img class="cr7" src="imgage/cr7.jpg" alt="">
+                         <section class="commenting-user-info">
+                            <div class="commenting-user-div">
+                                <a href="#" class="commenting-user-name">Cristiano Ronaldo 
+                                    <img class="verified" src="imgage/verified.png" alt="">
+                                </a>
+                                <h4 class="using-comment">
+                                    wow what a nice picture man😲!
+                                </h4>
+                            </div>
+                            <div class="comment-details">
+                                <a id="text-light" href="#">2 h</a>
+                                <a href="#">Like</a>
+                                <a href="#">Reply</a>
+                                <a href="#">Share</a>
+                                <div id="react-an">
+                                    <a id="text-light2" href="#">
+                                        <span> 987K</span>
+                                       
+                                             <div id="com-rec" class="who-give-react">
+                                              <a class="rec-back recat-bg" href="#"><img class="rec-icon wow-icon" src="imgage/wow.png" alt=""></a>
+                                              <a class="rec-back recat-bg1" href="#"><img class="rec-icon love-icon" src="imgage/love.png" alt=""></a>
+                                              <a class="rec-back recat-bg2" href="#"><img class="rec-icon like-icon" src="imgage/like.png" alt=""></a>
+                                            
+                                          
+                                               </div>
+                                            
+                                      
+                                     </a>
+                                </div>
+                            </div>
+                            <a class="reply-text" href="#">View all 534K reply</a>
+                            <div class="oo"></div>
+                         </section>
+                    </section>
+                </div>
+                <div class="comments-str">
+                  <a href="#">
+                    <img class="comment-user-img" src="imgage/user.jpg" alt="">
+                    <div class="down-con2 down-con-comment-dot">
+                        <i class="fa-solid fa-angle-down down-icon"></i>
+                    </div>
+                </a>
+                  <div id="commentHeight" class="comment-promt">
+                    <section class="promt-com-left">
+                        <input onclick="moreHeight()" onkeypress="keyUp()"
+                       class="comment-input" type="text" placeholder="Comment as Mohammad Imran">
+                    </section>
+                    <section id="emojiPadding" class="promt-com-right">
+                        <section class="emoji-left">
+                            <a href="#" class="comment-promt-a for-margin"><i class="fa-light fa-face-holding-back-tears"></i></a>
+
+                        <a href="#" class="comment-promt-a for-margin"><i class="fa-light fa-face-smile"></i></a>
+
+                        <a href="#" class="comment-promt-a for-margin"><i class="fa-light fa-camera"></i></a>
+
+                        <a href="#" class="comment-promt-a for-margin"><i class="fa-light fa-gif"></i></a>
+
+                        <a href="#" class="comment-promt-a"><i class="fa-light fa-note-sticky"></i></a>
+                        </section>
+
+                        <a id="sendComment" href="#" class="comment-promt-a"><i id="amni" class="fa-solid fa-paper-plane-top"></i></a>
+                    </section>
+
+                  </div>
+                </div>
+                
+         </section>
+
+         
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores iusto iure sunt dolor beatae sequi saepe distinctio sint nobis nisi, eligendi voluptates libero facilis nostrum, molestias dolores magni. Quasi, itaque earum excepturi velit quia porro reprehenderit accusantium explicabo sapiente corporis doloribus sed ratione est, suscipit delectus! Maiores suscipit porro repellat nesciunt provident, laborum facere, ab, perspiciatis quae eos illum perferendis animi ducimus aliquid dolor quia unde. Hic laborum quibusdam necessitatibus nostrum quaerat veritatis nemo quisquam omnis. Praesentium non omnis sint, repellendus quos suscipit quis! Aliquam cupiditate nostrum enim accusamus voluptates sapiente doloremque, vitae tenetur in sit odio explicabo nobis placeat doloribus obcaecati inventore alias quidem quisquam ea laudantium velit qui temporibus rerum. Voluptate, laborum eos, ullam veniam doloremque minima minus, quasi beatae deserunt natus provident odio ipsum dolore dolorem accusantium inventore placeat ad numquam quo magni similique. Quasi facilis quae delectus aut tempore iste veniam quisquam, officia earum. Temporibus culpa, eius ab laborum, quam numquam perferendis molestias magni nam voluptatum autem iste sint excepturi quidem maiores a esse dolorem recusandae adipisci. Iste suscipit ipsa sunt voluptatum cumque id, repellendus harum laudantium iure! Unde nulla placeat illo, natus quidem officiis saepe odit facilis perferendis. Quas possimus eum labore saepe beatae quisquam esse laudantium corporis, ratione nesciunt rerum neque architecto reprehenderit odio voluptates, recusandae illo doloremque temporibus enim optio error eligendi dolores nam similique? Esse autem tempora vitae ducimus veritatis voluptatum amet ut, quo rem molestiae assumenda nemo optio ipsum? Quae veritatis dolor fugiat tempora hic minus consectetur dolorum doloribus cum ducimus, at laborum neque necessitatibus sequi nam ex, corporis officiis ut, veniam expedita a nisi delectus? Eligendi soluta suscipit dignissimos facere at! Soluta quo saepe id deleniti, itaque facere animi nulla iusto officiis explicabo alias voluptatem eius earum rem dolor quidem? Nam eligendi magni, officia est odit saepe. Qui aut dolore officiis culpa nobis. Ipsa similique praesentium veritatis id voluptatem minus adipisci est distinctio consectetur consequatur explicabo reprehenderit, quam itaque perspiciatis aut eius. Sequi natus facere ex corporis iusto ipsum ducimus eligendi ullam aperiam deserunt tempore sed enim corrupti pariatur, soluta temporibus accusantium sapiente, modi ab aliquam! Dolorum nam quisquam quod. Quia nisi corrupti nostrum nihil esse laboriosam cumque. Ab expedita, perferendis nisi minima veritatis repellendus iste natus provident, labore laudantium eligendi quod reprehenderit vitae ipsum dolore vel fugiat veniam delectus! Aspernatur, error! Quae illum aperiam dignissimos ut, velit dolorum quod, eaque deserunt laudantium sequi accusamus minima, vel nulla. Ullam, similique temporibus? Eos, obcaecati expedita nam quidem commodi eaque quod sint sed accusamus iure, repudiandae deserunt consequatur vero rem id corrupti unde? Voluptatibus ad recusandae suscipit ipsa provident. Doloribus rem veniam fugiat facilis laboriosam omnis vitae. Qui blanditiis nulla velit, dolor voluptatem est? Nemo, aliquid error soluta voluptas, nostrum temporibus porro, sed quos nisi illo doloribus a quaerat veritatis voluptatem debitis rem ad aliquam enim vero repellendus minima! Veniam maxime maiores omnis! Est, error neque soluta dolorem porro in delectus commodi ratione non ut totam assumenda repudiandae mollitia voluptatum repellendus sunt dignissimos fugiat aliquid cumque dolorum? Exercitationem ullam quae, ut fugiat aspernatur magnam aliquam voluptates architecto! Sequi, pariatur! Qui aut nesciunt recusandae praesentium sint hic doloremque minima, cumque neque accusantium dolor maiores obcaecati quis nostrum rem, quae voluptates amet temporibus. Aspernatur obcaecati nemo inventore soluta harum cumque unde vero ratione odit cupiditate architecto saepe nihil dignissimos quas voluptates voluptatem, neque excepturi reiciendis eos repellendus corrupti beatae incidunt doloribus atque. Commodi dolore amet tenetur dicta, assumenda ut maiores nisi, consectetur consequatur illum eos culpa voluptates cupiditate voluptate! Aspernatur omnis non explicabo. Aperiam ipsam veritatis sapiente expedita sequi molestiae quae, temporibus a maiores distinctio assumenda nam velit perspiciatis culpa iusto ratione est laborum ut incidunt iure labore eligendi explicabo? Et suscipit placeat quos maxime laboriosam ab alias magnam reprehenderit provident beatae voluptate eveniet voluptatum, earum, quo cum debitis veritatis voluptas explicabo numquam eos! Perferendis possimus ipsum placeat! Molestias, temporibus. Cum laboriosam enim fuga dolor veniam? Repudiandae accusamus porro odit minus sit facere expedita, neque nam officiis, vitae at eos molestias dolor laborum sunt quod rem rerum ut pariatur perspiciatis qui excepturi magnam. Maiores perferendis quod quo accusamus odit, tempora consequuntur soluta, consequatur cupiditate sit voluptatem sapiente pariatur nisi vero! Inventore, earum quaerat qui expedita explicabo reprehenderit praesentium ab labore enim nobis non commodi autem in est hic, vel harum, quibusdam rerum sequi eius culpa cumque saepe id quis? Assumenda, optio. Fugiat quae reiciendis corporis mollitia consequatur veniam qui repudiandae omnis ipsa voluptas magnam ut veritatis magni dolore vero harum quis repellendus, nam possimus tenetur nemo sunt assumenda pariatur sint. Optio ipsa est quo tempore fugit itaque neque, eum iusto suscipit animi repudiandae mollitia nesciunt voluptate qui veritatis commodi porro, accusamus labore sint obcaecati explicabo perspiciatis recusandae. Unde earum id illo qui fugiat laborum, incidunt nemo est magnam. Et aliquam ducimus obcaecati possimus officia, veritatis asperiores molestiae aspernatur sapiente quia repudiandae blanditiis itaque odit minus dolor voluptates quisquam reiciendis velit aperiam repellendus soluta ab at. Modi ex magni reiciendis! Porro aspernatur possimus neque reiciendis unde eligendi esse repellat hic in saepe modi earum, nisi cupiditate voluptatibus architecto delectus ratione rem, fugiat impedit, incidunt nihil. Distinctio, at sed libero similique repudiandae ipsum earum praesentium quaerat, nihil culpa cupiditate! Assumenda omnis ipsa dolorem quos corrupti non autem alias sed nam. Delectus nam fugiat sequi fuga minus excepturi, illo eaque? Qui, esse temporibus repudiandae a optio tempora, eum maxime, voluptate autem molestiae labore cumque saepe ad sequi accusantium aliquid! Inventore dolor possimus repellat perspiciatis unde impedit reiciendis excepturi facere laboriosam adipisci rem eligendi fugiat illum deleniti molestias repudiandae, fuga cum placeat quaerat, dolores similique commodi voluptate aspernatur. Veritatis eveniet vero molestias pariatur quidem! Voluptates quaerat consequatur eius dolorem aspernatur beatae consequuntur quae repudiandae? Pariatur est sapiente vel, neque aliquam enim voluptatum quasi obcaecati officia magnam repellendus! Recusandae praesentium libero pariatur cupiditate vel quasi nam voluptate maiores quaerat, porro tenetur minima laudantium ex delectus. Aspernatur, quisquam doloremque? Debitis quam iure molestiae deleniti quas voluptatem, itaque repellendus quia voluptatibus ipsum ad repellat nemo consequatur alias. Tempora accusantium consectetur inventore, itaque in nobis! Necessitatibus, commodi sapiente libero iusto culpa vero!</p>
+
+
+    </div>
+
+
+
+   <div class="main-body-right">
+
+      <section class="page-profile">
+        <section class="page-title-contain">
+            <h1 class="page-title">Your Pages and profiles</h1>
+            <a class="threeDot" href="#"> <i class="fa-regular fa-ellipsis threedot"></i></a>
+            </section>
+
+        <section class="page-name-con">
+            <img class="page-img" src="imgage/gmt.jpg" alt="">
+            <h1 class="page-name-title">GMT Creation</h1>
+        </section>
+
+
+        <section class="pages-gp">
+            <ul class="page-ul">
+                <li><a class="page-a" href="#">
+                   <i class="fa-light fa-messages message-icon"></i>
+                    2 messages</a></li>
+
+                <li><a class="page-a" href="#">
+                        <i class="fa-light fa-arrows-rotate rotate-icon"></i>
+                    Switch to Page</a></li>
+
+                <li><a class="page-a" href="#">
+                   <i class="fa-light fa-bullhorn mike-icon"></i>
+                    Create promotion</a></li>
+            </ul>
+        </section>
+      </section>
+
+      <section class="friends-rqs">
+        <section class="page-title-contain friends-title-con">
+            <h1 class="page-title">Friends requests</h1>
+            <a class="threeDot seeAllFriends" href="#">See All</a>
+            </section>
+              
+            <a href="#" class="nd-frn-con">
+                <section class="friend-request">
+                    <section class="left-frn">
+                        <img class="mark-z" src="imgage/mark.jpg" alt="">
+                    <h1 class="friend-name">Mark Zuckerberg <br> 
+                        <span> 
+                            <img class="mutual-frn" src="imgage/st7.jpg" alt=""> 
+                            324 mutual friend
+                        </span>
+                    </h1>
+                    </section>
+                
+                     <h3 class="time-h3">1h</h3>
+                </section>
+    
+               <section class="frn-btn">
+                   <button class="confirm-btn">Confirm</button>
+                   <button class="confirm-btn del-btn">Delete</button>
+               </section>
+            </a>
+
+      </section>
+       
+      <section class="wedding">
+        <section class="page-title-contain birthday-title">
+            <h1 class="page-title">Birthdays</h1>
+           
+            </section>
+
+            <section class="page-name-con wedding-matter">
+                <img class="frn-icon" src="imgage/gift-box.png" alt="">
+                  <h2 class="jamela">
+                   <span> Md. Al-Amin Biswass</span> and <span>3 others</span> have their birthdays today.
+                  </h2>
+            </section>
+      </section>
+
+
+      <section class="contacts">
+             <section class="contacts-title">
+                <h3 class="contact-name">Contacts</h3>
+                <section class="contact-src-sec">
+                    <a href="#" class="threeDot search-hider"><i class="fa-solid fa-magnifying-glass search-icon2"></i>
+                    <h4 class="title-text">Search for a name or group</h4>
+                    </a>
+                    <a  href="#" class="threeDot search-hider"><i class="fa-solid fa-ellipsis threedot"></i>
+                        <h4 class="title-text2">Options</h4></a>
+                </section>
+             </section>
+
+             <section class="contacts-list">
+                <ul class="contacts-ul">
+                    <li><a href="#">
+                        <img class="list-user-img" src="imgage/user.jpg" alt="">
+                        <div class="activ-dot"></div>
+                        <h4 class="list-user-name">Mohammad Imran</h4>
+                    </a></li>
+                    <li><a href="#">
+                        <img class="list-user-img" src="imgage/alamin.jpg" alt="">
+                        <div class="activ-dot"></div>
+                        <h4 class="list-user-name">Md Al Amin</h4>
+                    </a></li>
+                    <li><a href="#">
+                        <img class="list-user-img" src="imgage/saleh.jpg" alt="">
+                        <div class="activ-dot"></div>
+                        <h4 class="list-user-name">Abu Saleh Noor </h4>
+                    </a></li>
+                    <li><a href="#">
+                        <img class="list-user-img" src="imgage/joy.jpg" alt="">
+                        <div class="activ-dot"></div>
+                        <h4 class="list-user-name">Md. Humayon Kobir Joy</h4>
+                    </a></li>
+                    <li><a href="#">
+                        <img class="list-user-img" src="imgage/tofa.jpg" alt="">
+                        <div class="activ-dot"></div>
+                        <h4 class="list-user-name">Munshi Amir Mahmud ToFa</h4>
+                    </a></li>
+                    <li><a href="#">
+                        <img class="list-user-img" src="imgage/rabby biswas.jpg" alt="">
+                        <div class="activ-dot"></div>
+                        <h4 class="list-user-name">Md Rabby Biswas</h4>
+                    </a></li>
+                    <li><a href="#">
+                        <img class="list-user-img" src="imgage/naim.jpg" alt="">
+                        <div class="activ-dot"></div>
+                        <h4 class="list-user-name">Tanjit Hassan Naim</h4>
+                    </a></li>
+                    <li><a href="#">
+                        <img class="list-user-img" src="imgage/nurali.jpg" alt="">
+                        <div class="activ-dot"></div>
+                        <h4 class="list-user-name">Md Nur Ali Sorkar</h4>
+                    </a></li>
+                    <li><a href="#">
+                        <img class="list-user-img" src="imgage/rafi.jpg" alt="">
+                        <div class="activ-dot"></div>
+                        <h4 class="list-user-name">Reshadul Islam Ra Fi </h4>
+                    </a></li>
+                    <li><a href="#">
+                        <img class="list-user-img" src="imgage/yasin.jpg" alt="">
+                        <div class="activ-dot"></div>
+                        <h4 class="list-user-name">Yasin Arafat</h4>
+                    </a></li>
+                    <li><a href="#">
+                        <img class="list-user-img" src="imgage/yakub.jpg" alt="">
+                        <div class="activ-dot"></div>
+                        <h4 class="list-user-name">MD Yakub Ali</h4>
+                    </a></li>
+                   
+                    <li><a href="#">
+                        <img class="list-user-img" src="imgage/mirza.jpg" alt="">
+                        <div class="activ-dot"></div>
+                        <h4 class="list-user-name">Resadul Mirza</h4>
+                    </a></li>
+                    <li><a href="#">
+                        <img class="list-user-img" src="imgage/shahin.jpg" alt="">
+                        <div class="activ-dot"></div>
+                        <h4 class="list-user-name">Shahriar Shahin</h4>
+                    </a></li>
+                    <li><a href="#">
+                        <img class="list-user-img" src="imgage/rased.jpg" alt="">
+                        <div class="activ-dot"></div>
+                        <h4 class="list-user-name">Rashed Hasan</h4>
+                    </a></li>
+                    <li><a href="#">
+                        <img class="list-user-img" src="imgage/hridoy.jpg" alt="">
+                        <div class="activ-dot"></div>
+                        <h4 class="list-user-name">MD Hridoy Biswas</h4>
+                    </a></li>
+                    <li><a href="#">
+                        <img class="list-user-img" src="imgage/sajid.jpg" alt="">
+                        <div class="activ-dot"></div>
+                        <h4 class="list-user-name">MD Sakhawat Mun Sajid</h4>
+                    </a></li>
+                   
+                    <li><a href="#">
+                        <img class="list-user-img" src="imgage/ratan ali.jpg" alt="">
+                        <div class="activ-dot"></div>
+                        <h4 class="list-user-name">MD Ratan Ali</h4>
+                    </a></li>
+                 
+                  
+                   
+                </ul>
+             </section>
+
+           
+      </section>
+
+       <section class="gp-conversations">
+
+
+
+        <section class="contacts-title gp-title">
+            <h3 class="contact-name">Group conversations</h3>
+            
+         </section>
+          
+
+         <section class="contacts-list">
+            <ul class="contacts-ul">
+                <li><a href="#">
+                    <img class="list-user-img" src="imgage/user.jpg" alt="">
+                    <div class="activ-dot"></div>
+                    <h4 class="list-user-name">Mohammad</h4>
+                </a></li>
+                <li><a href="#">
+                    <img class="list-user-img" src="imgage/ph.jpg" alt="">
+                    <div class="activ-dot"></div>
+                    <h4 class="list-user-name">Programming Hero Community</h4>
+                </a></li>
+                <li><a href="#">
+                    <img class="list-user-img" src="imgage/joy.jpg" alt="">
+                    <div class="activ-dot"></div>
+                    <h4 class="list-user-name">Md. Humayon Kobir Joy</h4>
+                </a></li>
+            </ul>
+         </section>
+          
+         <section class="creat-gp">
+             <a href="#" class="plus-icon-a">+</a>
+             <h4 class="list-user-name">Create New Group</h4>
+         </section>
+       
+  </section>
+
+
+
+       </section>
+
+
+   </div>
+
+
+
+
+
+ 
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script2.js"></script>
+</body>
+</html>
