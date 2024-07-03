@@ -199,16 +199,23 @@ function keyUp() {
 }
 
 
+
+// repost str
+
+
+
 function moreHeight2(){
     const ok = document.getElementById("commentHeight2")
     const emoji = document.getElementById("emojiPadding2")
     const sendEmoji = document.getElementById("sendComment2")
+
         ok.style.height = "80px"
         ok.style.borderRadius = "20px"
         ok.style.flexDirection = "column"
         emoji.style.paddingBottom = "10px"
         emoji.style.width ="100%"
         sendEmoji.style.display = "flex"
+    
     console.log(sendEmoji)
 }
 
@@ -217,6 +224,34 @@ function moreHeight2(){
 function keyUp2() {
     const anchor = document.getElementById("sendComment2")
     const anchorIcon = document.getElementById("amni2")
+          anchor.style.opacity ="100%"
+          anchor.style.cursor = "pointer"
+         anchorIcon.classList.add("amni")
+    console.log(anchorIcon)
+}
+
+
+
+function moreHeight3(){
+    const ok = document.getElementById("commentHeight3")
+    const emoji = document.getElementById("emojiPadding3")
+    const sendEmoji = document.getElementById("sendComment3")
+
+        ok.style.height = "80px"
+        ok.style.borderRadius = "20px"
+        ok.style.flexDirection = "column"
+        emoji.style.paddingBottom = "10px"
+        emoji.style.width ="100%"
+        sendEmoji.style.display = "flex"
+    
+    console.log(sendEmoji)
+}
+
+
+
+function keyUp3() {
+    const anchor = document.getElementById("sendComment3")
+    const anchorIcon = document.getElementById("amni3")
           anchor.style.opacity ="100%"
           anchor.style.cursor = "pointer"
          anchorIcon.classList.add("amni")

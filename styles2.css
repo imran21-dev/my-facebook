@@ -1273,10 +1273,10 @@ body{
     
 }
 #frnDot{
-    display: inline;
+    display: none;
 }
 #pubDot{
-    display: none;
+    display: inline;
 }
 .publicDot{
     font-size: 12px;
@@ -1491,6 +1491,9 @@ body{
 .emoji-left{
     display: flex;
 }
+
+/* repost str */
+
 #sendComment{
     cursor:not-allowed;
     display: none;
@@ -1501,6 +1504,24 @@ body{
     display: none;
     opacity: 50%;
 }
+#sendComment3{
+    cursor:not-allowed;
+    display: none;
+    opacity: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .comment-promt-a{
     width: 34px;
     height: 34px;
