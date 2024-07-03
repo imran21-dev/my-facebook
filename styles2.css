@@ -68,8 +68,16 @@ body{
     gap: 10px;
 }
 .header .icon li a{
-    font-size: 45px;
+    font-size: 40px;
+   
   
+}
+.facebook-a{
+    display: none;
+}
+.venus{
+    width: 40px;
+    margin-top: 6px;
 }
 .facebook-icon{
     color: var(--primary-color);
@@ -79,7 +87,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 250px;
-    height: 45px;
+    height: 40px;
    background-color: var(--background-color);
    border-radius: 50px;
     position: relative;
@@ -87,7 +95,7 @@ body{
     
 }
 .search-icon{
-    font-size: 20px;
+    font-size: 16px;
     color: var(--second-font-color);
     text-indent: 15px;
 }
@@ -95,7 +103,7 @@ body{
     border: none;
    background-color: var(--background-color);
     width: 220px;
-    height: 45px;
+    height: 40px;
     border-radius: 50px;
     font-size: 17px;
     font-weight: 400;
@@ -110,7 +118,7 @@ body{
 
 }
 .main-nav li a i{
-    font-size: 25px;
+    font-size: 22px;
     color: var(--second-font-color);
    
 }
@@ -148,8 +156,8 @@ body{
     gap: 10px;
 }
 .user-info li{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     
     border-radius: 50%;
     display: flex;
@@ -170,11 +178,11 @@ body{
 }
 
 .user-info li a i{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .user-img{
-    width: 50px;
+    width: 40px;
     border-radius: 50%;
 }
 .user-img:hover{
@@ -230,10 +238,10 @@ body{
 }
 .bell-noti{
     position: absolute;
-    right: 80px;
-    top: 5px;
-    width: 20px;
-    height: 20px;
+    right: 70px;
+    top: 7px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
     background-color: red;
     color: var(--secondary-color);
@@ -268,8 +276,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
-    padding: 25px 10px;
+    gap: 5px;
+    padding: 10px 10px;
 }
 .body-left-ul li{
     display: flex;
@@ -283,7 +291,7 @@ body{
     background-color: var(--background2-color);
 }
 .body-left-ul li a{
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
    
     width: 100%;
@@ -784,7 +792,7 @@ body{
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    width: 90%;
+    width: 75%;
     gap: 0px;
     padding-top: 15px;
     padding-bottom: 10px;
@@ -902,7 +910,7 @@ body{
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    width: 90%;
+    width: 75%;
     gap: 0px;
     padding-bottom: 8px;
     border-bottom: 1px solid #D8DADF;
@@ -1003,7 +1011,7 @@ body{
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    width: 90%;
+    width: 75%;
     gap: 0px;
     padding-bottom: 8px;
     border-bottom: 1px solid #D8DADF;
@@ -1013,7 +1021,7 @@ body{
 
 
 .frn-icon{
-    width: 40px;
+    width: 35px;
     position: relative;
     left: 10px;
  
@@ -1048,7 +1056,7 @@ body{
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    width: 90%;
+    width: 75%;
     gap: 0px;
     padding-bottom: 8px;
     border-bottom: 1px solid #D8DADF;
@@ -1172,7 +1180,7 @@ body{
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    width: 90%;
+    width: 75%;
     gap: 0px;
     padding-bottom: 8px;
    
@@ -1510,7 +1518,9 @@ body{
     opacity: 50%;
 }
 
-
+#postOne{
+    display: flex;
+}
 
 
 
@@ -1558,6 +1568,7 @@ body{
     align-items: start;
     gap: 10px;
 }
+
 .comenting-user{
     width: 100%;
     display: flex;
@@ -1670,4 +1681,180 @@ body{
     border-bottom-left-radius: 15px;
     border-left: 2px solid var(--background-color);
     border-bottom: 2px solid var(--background-color);
+}
+
+#assa{
+    position: absolute;
+    bottom: -830px;
+    right: 20px;
+  
+}
+#assa-a{
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.2);
+    box-shadow: 1px 1px 30px 1px #b6b7b9;
+}
+#assa-a i{
+    font-size: 16px;
+    position: relative;
+    left: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.tap-upload-str{
+    width: 100%;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 1px 2px #0000ff;
+}
+.post-pop-img{
+    width: 40px;
+    border-radius: 50%;
+}
+.up-popup-head{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #D8DADF;
+}
+.popup-text{
+    font-size: 17px;
+    font-weight: 600;
+}
+.up-popup-head a{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.up-popup-head a:hover{
+    background-color: var(--background2-color);
+}
+.close-popup{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--second-font-color);
+}
+.user-popup{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.user-pop-name{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3px;
+}
+.user-popup-name{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--second-font-color);
+}
+.pop-public{
+    background-color: var(--background-color);
+    width:max-content;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--second-font-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 5px;
+}
+.popup-eart, .popup-down{
+    color: var(--second-font-color);
+}
+.post-promt{
+    width: 95%;
+    height: 120px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 8px;
+}
+.post-pop-text{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    color: var(--second-font-color);
+}
+.post-pop-text::placeholder{
+    font-size: 24px;
+    color: var(--second-font-color);
+}
+.button-str{
+    width: 95%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+#popNextBtn{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 5px;
+    padding: 7px 0px;
+    margin: 5px 0px;
+}
+.add-to-post{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #D8DADF;
+    border-radius: 5px;
+}
+.adpost-rt{
+    background: #ef000028;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.adpost-rt a{
+    width: 35px;
+    height: 35px;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }

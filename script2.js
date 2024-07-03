@@ -258,3 +258,18 @@ function keyUp3() {
     console.log(anchorIcon)
 }
 
+function checkClose() {
+    const closePost = document.getElementById("postOne")
+          closePost.style.display = "none"
+    console.log(closePost)
+}
+function checkClose2() {
+    const closePost = document.getElementById("postTwo")
+          closePost.style.display = "none"
+    console.log(closePost)
+}
+function checkClose3() {
+    const closePost = document.getElementById("postThree")
+          closePost.style.display = "none"
+    console.log(closePost)
+}

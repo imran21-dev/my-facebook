@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles2.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
-    <title>Facebook</title>
+    <link rel="shortcut icon" href="imgage/venus-01.png" type="image/x-icon">
+    <title>Venus</title>
 
 </head>
 <body>
     <!-- header -->
     <header class="header">
         <ul class="icon">
-            <li><a href="#"><i class="fa-brands fa-facebook facebook-icon"></i></a></li>
+            <li><a class="facebook-a" href="#"><i class="fa-brands fa-facebook facebook-icon"></i></a></li>
+            <li><a href="#"><img class="venus" src="imgage/venus-01.png" alt=""></a></li>
              <li class="search-box-li">
                 <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                <input class="search-bar" type="search" placeholder="Search Facebook">
+                <input class="search-bar" type="search" placeholder="Search Venus">
             </li>
         </ul>
 
@@ -31,6 +33,7 @@
         <ul class="user-info">
             <li><a href="#"><i class="fa-solid fa-grid"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-facebook-messenger"></i></a></li>
+            <li id="assa"><a id="assa-a" href="#"><i class="fa-regular fa-pen-to-square"></i></a></li>
             <li><a href="#"><i class="fa-solid fa-bell"></i>
                  <h3 class="bell-noti">6</h3>
             </a></li>
@@ -366,7 +369,48 @@
             </div>
         </section>
 
-         <section class="uploading-str">
+        <section id="uploadingPopup" class="tap-upload-str">
+                  <section class="up-popup-head">
+                      <h6 href="#">&nbsp;</h6>
+                      <h1 class="popup-text"> Create post</h1>
+                      <a href="#"><i class="fa-regular fa-xmark close-popup"></i></a>
+                  </section> 
+                  <section class="user-popup">
+                      <a href="#"><img class="post-pop-img" src="imgage/user.jpg" alt=""></a>
+                        <section class="user-pop-name">
+                            <h1 class="user-popup-name">Mohammad Imran</h1>
+                            <a href="#" class="pop-public">
+                                <i class="fa-solid fa-earth-americas popup-eart"></i>
+                                Public
+                                <i class="fa-solid fa-caret-down popup-down"></i></a>
+                        </section>
+                  </section>
+                  <section class="post-promt">
+                    <input class="post-pop-text" type="text" placeholder="What's on your mind, Mohammad?">
+                  </section>
+                  <section class="set-bg">
+
+                  </section>
+                  <section class="add-to-post">
+                      <section class="adpost-lt">
+                        <a href="#">Add to your post</a>
+                      </section>
+                      <section class="adpost-rt">
+                        <a href="#">ok</a>
+                        <a href="#">ok</a>
+                        <a href="#">ok</a>
+                        <a href="#">ok</a>
+                        <a href="#">ok</a>
+                        <a href="#">ok</a>
+                      </section>
+                  </section>
+                  <section class="button-str">
+                     <button id="popNextBtn">Next</button>
+                  </section>
+
+        </section>
+
+         <section id="postOne" class="uploading-str">
                 <div class="str-user-info">
                     <div class="str-user-info-left">
                         <a href="#"><img id="user-profile-img" src="imgage/st7.jpg" alt=""></a>
@@ -382,7 +426,7 @@
                     </div>
                     <div class="str-user-info-right">
                         <a href="#"><i class="fa-solid fa-ellipsis post-closing-icon"></i></a>
-                        <a href="#"><i class="fa-regular fa-xmark post-closing-icon"></i></a>
+                        <a onclick="checkClose()" href="#"><i class="fa-regular fa-xmark post-closing-icon"></i></a>
                     </div>
                 </div>
                 <div class="post-title-con">
@@ -493,7 +537,7 @@
          </section>
 
 
-         <section class="uploading-str">
+         <section  id="postTwo" class="uploading-str">
             <div class="str-user-info">
                 <div class="str-user-info-left">
                     <a href="#"><img id="user-profile-img" src="imgage/st7.jpg" alt=""></a>
@@ -509,7 +553,7 @@
                 </div>
                 <div class="str-user-info-right">
                     <a href="#"><i class="fa-solid fa-ellipsis post-closing-icon"></i></a>
-                    <a href="#"><i class="fa-regular fa-xmark post-closing-icon"></i></a>
+                    <a onclick="checkClose2()" href="#"><i class="fa-regular fa-xmark post-closing-icon"></i></a>
                 </div>
             </div>
             <div class="post-title-con">
@@ -620,7 +664,7 @@
     
 
 
-         <section class="uploading-str">
+         <section id="postThree" class="uploading-str">
             <div class="str-user-info">
                 <div class="str-user-info-left">
                     <a href="#"><img id="user-profile-img" src="imgage/st7.jpg" alt=""></a>
@@ -636,7 +680,7 @@
                 </div>
                 <div class="str-user-info-right">
                     <a href="#"><i class="fa-solid fa-ellipsis post-closing-icon"></i></a>
-                    <a href="#"><i class="fa-regular fa-xmark post-closing-icon"></i></a>
+                    <a onclick="checkClose3()" href="#"><i class="fa-regular fa-xmark post-closing-icon"></i></a>
                 </div>
             </div>
             <div class="post-title-con">
@@ -745,9 +789,12 @@
             
      </section>
 
+
+    
+       
+  
          
-
-
+   
 
     </div>
 
@@ -978,7 +1025,7 @@
 
 
        </section>
-
+      
 
    </div>
 
@@ -986,12 +1033,8 @@
 
 
 
- 
-   
 
-
-
-
+  
 
 
 
