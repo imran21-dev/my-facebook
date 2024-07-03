@@ -1496,6 +1496,11 @@ body{
     display: none;
     opacity: 50%;
 }
+#sendComment2{
+    cursor:not-allowed;
+    display: none;
+    opacity: 50%;
+}
 .comment-promt-a{
     width: 34px;
     height: 34px;
@@ -1645,4 +1650,3 @@ body{
     border-left: 2px solid var(--background-color);
     border-bottom: 2px solid var(--background-color);
 }
-
