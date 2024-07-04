@@ -258,9 +258,10 @@ function keyUp3() {
  
 }
 
-function checkClose() {
+function checkCloseY() {
     const closePost = document.getElementById("postOne")
           closePost.style.display = "none"
+          
   
 }
 function checkClose2() {
@@ -296,7 +297,7 @@ function checkAllH1() {
     const popBg = document.getElementById("postPromt")
     const text = document.getElementById("textArea")
        popBg.classList.add("js-pop-bg1")
-       popBg.style.height = "500px"
+       popBg.style.height = "400px"
        popBg.style.textAlign = "center"
        text.style.height = "30%"
        text.classList.add("js-placeholder")
@@ -314,7 +315,7 @@ function checkAllH2() {
     const popBg = document.getElementById("postPromt")
     const text = document.getElementById("textArea")
        popBg.classList.add("js-pop-bg2")
-       popBg.style.height = "500px"
+       popBg.style.height = "400px"
        popBg.style.textAlign = "center"
        text.style.height = "30%"
        text.classList.add("js-placeholder")
@@ -332,7 +333,7 @@ function checkAllH3() {
     const popBg = document.getElementById("postPromt")
     const text = document.getElementById("textArea")
        popBg.classList.add("js-pop-bg3")
-       popBg.style.height = "500px"
+       popBg.style.height = "400px"
        popBg.style.textAlign = "center"
        text.style.height = "30%"
        text.classList.add("js-placeholder")
@@ -350,7 +351,7 @@ function checkAllH4() {
     const popBg = document.getElementById("postPromt")
     const text = document.getElementById("textArea")
        popBg.classList.add("js-pop-bg4")
-       popBg.style.height = "500px"
+       popBg.style.height = "400px"
        popBg.style.textAlign = "center"
        text.style.height = "30%"
        text.classList.add("js-placeholder")
@@ -368,7 +369,7 @@ function checkAllH5() {
     const popBg = document.getElementById("postPromt")
     const text = document.getElementById("textArea")
        popBg.classList.add("js-pop-bg5")
-       popBg.style.height = "500px"
+       popBg.style.height = "400px"
        popBg.style.textAlign = "center"
        text.style.height = "30%"
        text.classList.add("js-placeholder")
@@ -386,7 +387,7 @@ function checkAllH6() {
     const popBg = document.getElementById("postPromt")
     const text = document.getElementById("textArea")
        popBg.classList.add("js-pop-bg6")
-       popBg.style.height = "500px"
+       popBg.style.height = "400px"
        popBg.style.textAlign = "center"
        text.style.height = "30%"
        text.classList.add("js-placeholder")
