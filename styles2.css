@@ -2237,3 +2237,51 @@ body{
 #cart-imgg:hover#userCart{
     display: flex;
 }
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .main-body-right{
+       display: none;
+    }
+    .main-body-left{
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .main-body-right{
+      width: 10%;
+    }
+    .main-body-left{
+      width: 10%;
+    }
+ 
+}
+@media only screen and (max-width: 992px) {
+    .main-body-right{
+      width: 20%;
+    }
+    .main-body-left{
+      width: 20%;
+    }
+    
+}
+@media only screen and (max-width: 1200px) {
+    .main-body-right{
+      width: 25%;
+    }
+    .main-body-left{
+      width: 25%;
+    }
+    
+}
+@media only screen and (max-width: 1500px) {
+    .main-body-right{
+       width: 30%;
+    }
+    
+}
