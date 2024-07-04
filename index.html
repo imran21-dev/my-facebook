@@ -14,7 +14,7 @@
     <header id="header" class="header">
         <ul class="icon">
             <li><a class="facebook-a" href="#"><i class="fa-brands fa-facebook facebook-icon"></i></a></li>
-            <li><a href="#"><img class="venus" src="imgage/venus-01.png" alt=""></a></li>
+            <li><a href="#index.html"><img class="venus" src="imgage/venus-01.png" alt=""></a></li>
              <li class="search-box-li">
                 <i class="fa-solid fa-magnifying-glass search-icon"></i>
                 <input class="search-bar" type="search" placeholder="Search Venus">
@@ -22,11 +22,11 @@
         </ul>
 
         <ul class="main-nav">
-            <li><a onclick="fillIcon()" href="#"><i id="homeIcon" class="fa-regular fa-house-window"></i></a></li>
-            <li><a onclick="fill2Icon()" href="#"><i id="videoIcon" class="fa-regular fa-clapperboard-play"></i></a></li>
-            <li><a onclick="fill3Icon()" href="#"><i id="storeIcon" class="fa-regular fa-store"></i></a></li>
-            <li><a onclick="fill4Icon()" href="#"><i id="groupIcon" class="fa-regular fa-user-group"></i></a></li>
-            <li><a onclick="fill5Icon()" href="#"><i id="gamingIcon" class="fa-regular fa-gamepad"></i></a></li>
+            <li><a onclick="fillIcon()" href="#header"><i id="homeIcon" class="fa-regular fa-house-window"></i></a></li>
+            <li><a onclick="fill2Icon()" href="#header"><i id="videoIcon" class="fa-regular fa-clapperboard-play"></i></a></li>
+            <li><a onclick="fill3Icon()" href="#header"><i id="storeIcon" class="fa-regular fa-store"></i></a></li>
+            <li><a onclick="fill4Icon()" href="#header"><i id="groupIcon" class="fa-regular fa-user-group"></i></a></li>
+            <li><a onclick="fill5Icon()" href="#header"><i id="gamingIcon" class="fa-regular fa-gamepad"></i></a></li>
         </ul>
         
 
@@ -369,6 +369,12 @@
             </div>
         </section>
 
+      
+
+
+
+
+
         <section id="uploadingPopup" class="tap-upload-str">
                   <section class="up-popup-head">
                       <h6 href="#">&nbsp;</h6>
@@ -430,11 +436,46 @@
 
         </section>
 
+
+
+
+        <section id="userCart" class="user-carT">
+            <section class="cart-user-info">
+              <a class="amar-imG" href="#"><img class="amar-img" src="imgage/user.jpg" alt=""></a>
+               <section class="user-cart-name">
+                  <a href="#" class="amar-name">Mohammad Imran</a>
+                   <ul class="cart-ul">
+                      <li><i class="fa-solid fa-circle-info"></i> <span>Page</span> 
+                          <i class="fa-solid fa-circle" id="jol"></i>
+                          Gamer
+                      </li>
+                      <li><i class="fa-solid fa-user"></i>
+                      Itz riam : Gaming Youtube channel</li>
+                      <li><i class="fa-solid fa-phone"></i>
+                      +8801301460344</li>
+                      <li><i class="fa-solid fa-box-check"></i> <a class="followe-a" href="#">263M followers</a></li>
+                   </ul>
+               </section>
+            </section>
+            <section class="cart-user-button">
+              <a class="messas-btn" href="#"><i class="fa-brands fa-facebook-messenger"></i> 
+                  Message</a>
+              <a class="folloe-btn" href="#">
+                  <i class="fa-solid fa-user-plus"></i>
+                  Follow</a>
+              <a class="threebot" href="#"><i class="fa-solid fa-ellipsis"></i></a>
+            </section>
+    </section>
+
+
+
+
+
      <section id="mainPostStr">
         <section id="postOne" class="uploading-str">
             <div class="str-user-info">
                 <div class="str-user-info-left">
-                    <a href="#"><img id="user-profile-img" src="imgage/st7.jpg" alt=""></a>
+                    <a class="kno-kno" onmouseover="checkO()" onmouseleave="checkT()" id="cart-imgg" href="#"><img id="user-profile-img" src="imgage/st7.jpg" alt=""></a>
                     <h2 class="user-profile-name">
                         Mohammad <span class="post-info-title">
                             update his profile picture.
@@ -446,7 +487,7 @@
                     </h2>
                 </div>
                 <div class="str-user-info-right">
-                    <a href="#"><i class="fa-solid fa-ellipsis post-closing-icon"></i></a>
+                    <a id="oyna" href="#"><i class="fa-solid fa-ellipsis post-closing-icon"></i></a>
                     <a onclick="checkCloseY()" href="#"><i class="fa-regular fa-xmark post-closing-icon"></i></a>
                 </div>
             </div>
@@ -556,7 +597,9 @@
             </div>
             
      </section>
+      
 
+  
 
      <section  id="postTwo" class="uploading-str">
         <div class="str-user-info">

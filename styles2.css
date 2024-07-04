@@ -2108,3 +2108,132 @@ body{
 .blur{
     filter: blur(2px);
 }
+
+
+.amar-img{
+    width: 100px;
+    border-radius: 50%;
+}
+.amar-imG:hover{
+    filter: brightness(.9);
+   
+}
+.user-carT{
+    background-color: var(--secondary-color);
+    display: none;
+    flex-direction: column;
+    padding: 20px 25px;
+    border-radius: 10px;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 1px 1px 10px #4d4d4d23;
+    position: absolute;
+    left: -170px;
+    top: 565px;
+    z-index: 99;
+    
+    
+}
+
+.cart-user-info{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+}
+.user-cart-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+}
+.amar-name{
+    font-size: 18px;
+    font-weight: 600;
+}
+.cart-ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.cart-ul li{
+    font-size: 15px;
+    display: flex;
+    gap: 8px;
+    justify-content: start;
+    align-items: center;
+    color: var(--second-font-color);
+}
+.cart-ul li i{
+    font-size: 18px;
+    color: var(--second-font-color);
+}
+#jol{
+    font-size: 4px;
+}
+.cart-ul li span{
+    font-weight: 500;
+}
+.followe-a{
+    font-weight: 500;
+}
+.followe-a:hover{
+    text-decoration: underline;
+}
+.cart-user-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.messas-btn{
+    background-color: var(--primary-color);
+    font-size: 15px;
+    color: var(--secondary-color);
+    font-weight: 500;
+    padding: 10px 35px;
+    border-radius: 7px;
+}
+.messas-btn i{
+    color: var(--secondary-color);
+    font-size: 14px;
+    margin-right: 2px;
+}
+.folloe-btn{
+    background-color: var(--background-color);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 35px;
+    border-radius: 7px;
+}
+.folloe-btn i{
+    
+    font-size: 14px;
+    margin-right: 2px;
+}
+.threebot{
+    background-color: var(--background-color);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+.threebot:hover{
+    background-color: var(--background2-color);
+}
+.messas-btn:hover{
+    background-color: #005bee;
+}
+.folloe-btn:hover{
+    background-color: var(--background2-color);
+}
+.threebot i{
+    
+    font-size: 14px;
+    margin-right: 2px;
+}
+
+#cart-imgg:hover#userCart{
+    display: flex;
+}

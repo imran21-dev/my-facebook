@@ -445,6 +445,7 @@ function checkPop() {
           MainPost.classList.add("blur")
           header.classList.add("blur")
           body.style.overflowY = "hidden"
+          body.style.overflowX = "hidden"
 
           pop.style.display = "flex"
           pop.classList.add("js-popup-cart-anim")
@@ -474,4 +475,16 @@ function checkClose() {
                 MainPost.classList.remove("blur")
                 header.classList.remove("blur")
                 body.style.overflowY = "scroll"
+                body.style.overflowX = "hidden"
+}
+
+function checkO() {
+    const cart = document.getElementById("userCart")
+          cart.style.display = "flex"
+    console.log(cart)
+}
+function checkT() {
+    const cart = document.getElementById("userCart")
+          cart.style.display = "none"
+    console.log(cart)
 }
