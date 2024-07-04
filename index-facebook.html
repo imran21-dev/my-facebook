@@ -9,9 +9,9 @@
     <title>Venus</title>
 
 </head>
-<body>
+<body id="body">
     <!-- header -->
-    <header class="header">
+    <header id="header" class="header">
         <ul class="icon">
             <li><a class="facebook-a" href="#"><i class="fa-brands fa-facebook facebook-icon"></i></a></li>
             <li><a href="#"><img class="venus" src="imgage/venus-01.png" alt=""></a></li>
@@ -57,7 +57,7 @@
 
 
   
-    <div class="main-body-left">
+    <div id="blurLeft" class="main-body-left">
         <section class="fb-option">
          <ul class="body-left-ul">
              <li>
@@ -244,7 +244,7 @@
    </div>
  
     <div class="main-body-middle">
-        <section class="story">
+        <section id="blur1" class="story">
             <section id="storySlidebar" class="story-slidebar">
                 <div class="my-story">
                     <img class="story-img" src="imgage/user.jpg" alt="">
@@ -311,7 +311,7 @@
             
             </section>
         </section>
-        <section class="story-scroll-btn-sec">
+        <section id="blur2" class="story-scroll-btn-sec">
          <div class="story-sec-btn-left">
             <button class="scroll-btn" id="scrollLeft1" onclick="checkL()">
                 <i class="fa-solid fa-chevron-left"></i></button>
@@ -333,13 +333,13 @@
       </div>
         </section>
 
-        <section class="uploading-sec">
+        <section id="blur3" class="uploading-sec">
             <div class="upload-con">
                  <ul class="upload-ul">
                      <li> <a href="#">
                         <img class="upload-img-user" src="imgage/user.jpg" alt="">
                      </a>
-                     <a class="upload-a" href="#">What's on your mind,Mohammad?</a>
+                     <a onclick="checkPop()" class="upload-a" href="#">What's on your mind,Mohammad?</a>
                     </li>
                     <li><div class="horizontal-line"></div></li>
                     <li>
@@ -373,7 +373,7 @@
                   <section class="up-popup-head">
                       <h6 href="#">&nbsp;</h6>
                       <h1 class="popup-text"> Create post</h1>
-                      <a href="#"><i class="fa-regular fa-xmark close-popup"></i></a>
+                      <a onclick="checkClose()" href="#"><i class="fa-regular fa-xmark close-popup"></i></a>
                   </section> 
                   <section class="user-popup">
                       <a href="#"><img class="post-pop-img" src="imgage/user.jpg" alt=""></a>
@@ -385,159 +385,53 @@
                                 <i class="fa-solid fa-caret-down popup-down"></i></a>
                         </section>
                   </section>
-                  <section class="post-promt">
-                    <input class="post-pop-text" type="text" placeholder="What's on your mind, Mohammad?">
+                  <section id="postPromt" class="post-promt">
+                    <!-- <input class="post-pop-text" type="text" placeholder="What's on your mind, Mohammad?"> -->
+                    <textarea onkeypress="checkAllKey()" id="textArea" class="text-aria post-pop-text" placeholder="What's on your mind, Mohammad?" cols="100" rows="7" name="" id=""></textarea>
                   </section>
                   <section class="set-bg">
-
+                    <section class="bg-coloring">
+                        <ul class="bg-coloring-ul">
+                            <li id="Aa"><a  onclick="checkAllC()" class="Aa-icon" href="#">Aa</a></li>
+                           <span id="color-bg-dis-sec" class="color-bg-dis-sec
+                           ">
+                            <li><a onclick="checkAllP()" class="pre-icon" href="#"><i class="fa-regular fa-chevron-left"></i></a></li>
+                            <li><a onclick="checkAllV()" class="Aa-icon virus" href="#"></a></li>
+                            <li><a onclick="checkAllH1()" class="bg-hexa1" href="#"></a></li>
+                            <li><a onclick="checkAllH2()" class="bg-hexa2" href="#"></a></li>
+                            <li><a onclick="checkAllH3()" class="bg-hexa3" href="#"></a></li>
+                            <li><a onclick="checkAllH4()" class="bg-hexa4" href="#"></a></li>
+                            <li><a onclick="checkAllH5()" class="bg-hexa5" href="#"></a></li>
+                            <li><a onclick="checkAllH6()" class="bg-hexa6" href="#"></a></li>
+                            <li><a class="pre-icon" href="#"><i class="fa-solid fa-grid-2"></i></a></li>
+                           </span>
+                        </ul>
+                    </section>
+                    <section class="bg-emoji">
+                        <a href="#"><i class="fa-light fa-face-smile"></i></a>
+                    </section>
                   </section>
                   <section class="add-to-post">
                       <section class="adpost-lt">
                         <a href="#">Add to your post</a>
                       </section>
                       <section class="adpost-rt">
-                        <a href="#">ok</a>
-                        <a href="#">ok</a>
-                        <a href="#">ok</a>
-                        <a href="#">ok</a>
-                        <a href="#">ok</a>
-                        <a href="#">ok</a>
+                        <a href="#"><i class="fa-solid fa-image rt-image"></i></a>
+                        <a href="#"><i class="fa-solid fa-user-tag rt-tag"></i></a>
+                        <a href="#"><i class="fa-regular fa-face-laugh rt-face"></i></a>
+                        <a href="#"><i class="fa-solid fa-location-dot rt-location"></i></a>
+                        <a href="#"><i class="fa-solid fa-gif rt-gif"></i></a>
+                        <a href="#"><i class="fa-solid fa-ellipsis rt-dot"></i></a>
                       </section>
                   </section>
                   <section class="button-str">
-                     <button id="popNextBtn">Next</button>
+                     <button class="popNextButton" id="popNextBtn">Next</button>
                   </section>
 
         </section>
 
-         <section id="postOne" class="uploading-str">
-                <div class="str-user-info">
-                    <div class="str-user-info-left">
-                        <a href="#"><img id="user-profile-img" src="imgage/st7.jpg" alt=""></a>
-                        <h2 class="user-profile-name">
-                            Mohammad <span class="post-info-title">
-                                update his profile picture.
-                            </span> <br> <span class="post-time-info">
-                                13 hours ago <i class="fa-solid fa-circle-small middot"></i>
-                                <i id="frnDot" class="fa-solid fa-user-group friendsDot"></i>
-                                <i id="pubDot" class="fa-solid fa-earth-americas friendsDot publicDot"></i>
-                            </span>
-                        </h2>
-                    </div>
-                    <div class="str-user-info-right">
-                        <a href="#"><i class="fa-solid fa-ellipsis post-closing-icon"></i></a>
-                        <a onclick="checkClose()" href="#"><i class="fa-regular fa-xmark post-closing-icon"></i></a>
-                    </div>
-                </div>
-                <div class="post-title-con">
-                    <h2 class="post-title">༆༉”ღ”🥰🥀-ღজীবনে সুন্দর ভাবে বেচে থাকার জন্যে বেশি <br>
-                        মানুষের প্রয়োজন হয় না-“ღ”🙂 <br>
-       ღ”🥀-ღ-কখনো কখনো একজন মানুষই আমাদের জীবনের <br>
-              সম্পূর্ণ পৃথিবী হয়ে উঠে-😍ღ⊰࿐•🌸🖤</h2>
-                    <h2 class="post-title"></h2>
-                </div>
-                <div class="post-image-str">
-                    <a class="post-img-a" href="#"><img id="post-img" src="imgage/user5.png" alt=""></a>
-                </div>
-                <div class="rections-str">
-                   <div class="who-give-react">
-                    <a class="rec-back recat-bg" href="#"><img class="rec-icon wow-icon" src="imgage/wow.png" alt=""></a>
-                    <a class="rec-back recat-bg1" href="#"><img class="rec-icon love-icon" src="imgage/love.png" alt=""></a>
-                    <a class="rec-back recat-bg2" href="#"><img class="rec-icon like-icon" src="imgage/like.png" alt=""></a>
-                  
-                    <a href="#" class="peoples-name">Mark Zuckerberg, Elon Musk and 187.2M others</a>
-                     </div>
-                   <div class="how-comment">
-                    <a href="#" class="peoples-name">
-                        32.1M comments &nbsp; 9.4M shares
-                    </a>
-                    </div>
-                </div>
-                <div class="like-str">
-                    <a class="like-giving-a" href="#">
-                        <i class="fa-regular fa-thumbs-up ok"></i>
-                        Like</a>
-                    <a class="like-giving-a" href="#">
-                        <i class="fa-regular fa-comment ok"></i>
-                        Comment</a>
-                    <a class="like-giving-a" href="#">
-                        <i class="fa-regular fa-share ok"></i>
-                        Share</a>
-                </div>
-                <div class="view-comments-str">
-                    <h1 class="view-comment-text">View more comments</h1>
-                    <section class="comenting-user">
-                         <img class="cr7" src="imgage/cr7.jpg" alt="">
-                         <section class="commenting-user-info">
-                            <div class="commenting-user-div">
-                                <a href="#" class="commenting-user-name">Cristiano Ronaldo 
-                                    <img class="verified" src="imgage/verified.png" alt="">
-                                </a>
-                                <h4 class="using-comment">
-                                    wow what a nice picture man😲!
-                                </h4>
-                            </div>
-                            <div class="comment-details">
-                                <a id="text-light" href="#">2 h</a>
-                                <a href="#">Like</a>
-                                <a href="#">Reply</a>
-                                <a href="#">Share</a>
-                                <div id="react-an">
-                                    <a id="text-light2" href="#">
-                                        <span> 98.7M</span>
-                                       
-                                             <div id="com-rec" class="who-give-react">
-                                              <a class="rec-back recat-bg" href="#"><img class="rec-icon wow-icon" src="imgage/wow.png" alt=""></a>
-                                              <a class="rec-back recat-bg1" href="#"><img class="rec-icon love-icon" src="imgage/love.png" alt=""></a>
-                                              <a class="rec-back recat-bg2" href="#"><img class="rec-icon like-icon" src="imgage/like.png" alt=""></a>
-                                            
-                                          
-                                               </div>
-                                            
-                                      
-                                     </a>
-                                </div>
-                            </div>
-                            <a class="reply-text" href="#">View all 53.4M reply</a>
-                            <div class="oo"></div>
-                         </section>
-                    </section>
-                </div>
-                <div class="comments-str">
-                  <a href="#">
-                    <img class="comment-user-img" src="imgage/user.jpg" alt="">
-                    <div class="down-con2 down-con-comment-dot">
-                        <i class="fa-solid fa-angle-down down-icon"></i>
-                    </div>
-                </a>
-                  <div id="commentHeight" class="comment-promt">
-                    <section class="promt-com-left">
-                        <input onclick="moreHeight()" onkeypress="keyUp()"
-                       class="comment-input" type="text" placeholder="Comment as Mohammad Imran">
-                    </section>
-                    <section id="emojiPadding" class="promt-com-right">
-                        <section class="emoji-left">
-                            <a href="#" class="comment-promt-a for-margin"><i class="fa-light fa-face-holding-back-tears"></i></a>
-
-                        <a href="#" class="comment-promt-a for-margin"><i class="fa-light fa-face-smile"></i></a>
-
-                        <a href="#" class="comment-promt-a for-margin"><i class="fa-light fa-camera"></i></a>
-
-                        <a href="#" class="comment-promt-a for-margin"><i class="fa-light fa-gif"></i></a>
-
-                        <a href="#" class="comment-promt-a"><i class="fa-light fa-note-sticky"></i></a>
-                        </section>
-
-                        <a id="sendComment" href="#" class="comment-promt-a"><i id="amni" class="fa-solid fa-paper-plane-top"></i></a>
-                    </section>
-
-                  </div>
-                </div>
-                
-         </section>
-
-
-         <section  id="postTwo" class="uploading-str">
+     <section id="mainPostStr">
+        <section id="postOne" class="uploading-str">
             <div class="str-user-info">
                 <div class="str-user-info-left">
                     <a href="#"><img id="user-profile-img" src="imgage/st7.jpg" alt=""></a>
@@ -553,17 +447,18 @@
                 </div>
                 <div class="str-user-info-right">
                     <a href="#"><i class="fa-solid fa-ellipsis post-closing-icon"></i></a>
-                    <a onclick="checkClose2()" href="#"><i class="fa-regular fa-xmark post-closing-icon"></i></a>
+                    <a onclick="checkClose()" href="#"><i class="fa-regular fa-xmark post-closing-icon"></i></a>
                 </div>
             </div>
             <div class="post-title-con">
-                <h2 class="post-title">Everyone's life is beautiful, <br>
-                                      some from the beginning <br>
-                                      and some at the end...........🙂</h2>
+                <h2 class="post-title">༆༉”ღ”🥰🥀-ღজীবনে সুন্দর ভাবে বেচে থাকার জন্যে বেশি <br>
+                    মানুষের প্রয়োজন হয় না-“ღ”🙂 <br>
+   ღ”🥀-ღ-কখনো কখনো একজন মানুষই আমাদের জীবনের <br>
+          সম্পূর্ণ পৃথিবী হয়ে উঠে-😍ღ⊰࿐•🌸🖤</h2>
                 <h2 class="post-title"></h2>
             </div>
             <div class="post-image-str">
-                <a class="post-img-a" href="#"><img id="post-img" src="imgage/user2.png" alt=""></a>
+                <a class="post-img-a" href="#"><img id="post-img" src="imgage/user5.png" alt=""></a>
             </div>
             <div class="rections-str">
                <div class="who-give-react">
@@ -571,11 +466,11 @@
                 <a class="rec-back recat-bg1" href="#"><img class="rec-icon love-icon" src="imgage/love.png" alt=""></a>
                 <a class="rec-back recat-bg2" href="#"><img class="rec-icon like-icon" src="imgage/like.png" alt=""></a>
               
-                <a href="#" class="peoples-name">Cristiano Ronaldo, Leo Messi and 1.6M others</a>
+                <a href="#" class="peoples-name">Mark Zuckerberg, Elon Musk and 187.2M others</a>
                  </div>
                <div class="how-comment">
                 <a href="#" class="peoples-name">
-                    221K comments &nbsp; 76K shares
+                    32.1M comments &nbsp; 9.4M shares
                 </a>
                 </div>
             </div>
@@ -593,14 +488,14 @@
             <div class="view-comments-str">
                 <h1 class="view-comment-text">View more comments</h1>
                 <section class="comenting-user">
-                     <img class="cr7" src="imgage/leo.jpg" alt="">
+                     <img class="cr7" src="imgage/cr7.jpg" alt="">
                      <section class="commenting-user-info">
                         <div class="commenting-user-div">
-                            <a href="#" class="commenting-user-name">Leo Messi 
+                            <a href="#" class="commenting-user-name">Cristiano Ronaldo 
                                 <img class="verified" src="imgage/verified.png" alt="">
                             </a>
                             <h4 class="using-comment">
-                                fantastic picture😲!
+                                wow what a nice picture man😲!
                             </h4>
                         </div>
                         <div class="comment-details">
@@ -610,7 +505,7 @@
                             <a href="#">Share</a>
                             <div id="react-an">
                                 <a id="text-light2" href="#">
-                                    <span> 1.1M</span>
+                                    <span> 98.7M</span>
                                    
                                          <div id="com-rec" class="who-give-react">
                                           <a class="rec-back recat-bg" href="#"><img class="rec-icon wow-icon" src="imgage/wow.png" alt=""></a>
@@ -624,7 +519,7 @@
                                  </a>
                             </div>
                         </div>
-                        <a class="reply-text" href="#">View all 878K reply</a>
+                        <a class="reply-text" href="#">View all 53.4M reply</a>
                         <div class="oo"></div>
                      </section>
                 </section>
@@ -636,12 +531,12 @@
                     <i class="fa-solid fa-angle-down down-icon"></i>
                 </div>
             </a>
-              <div id="commentHeight2" class="comment-promt">
+              <div id="commentHeight" class="comment-promt">
                 <section class="promt-com-left">
-                    <input onclick="moreHeight2()" onkeypress="keyUp2()"
+                    <input onclick="moreHeight()" onkeypress="keyUp()"
                    class="comment-input" type="text" placeholder="Comment as Mohammad Imran">
                 </section>
-                <section id="emojiPadding2" class="promt-com-right">
+                <section id="emojiPadding" class="promt-com-right">
                     <section class="emoji-left">
                         <a href="#" class="comment-promt-a for-margin"><i class="fa-light fa-face-holding-back-tears"></i></a>
 
@@ -654,141 +549,268 @@
                     <a href="#" class="comment-promt-a"><i class="fa-light fa-note-sticky"></i></a>
                     </section>
 
-                    <a id="sendComment2" href="#" class="comment-promt-a"><i id="amni2" class="fa-solid fa-paper-plane-top"></i></a>
+                    <a id="sendComment" href="#" class="comment-promt-a"><i id="amni" class="fa-solid fa-paper-plane-top"></i></a>
                 </section>
 
               </div>
             </div>
             
      </section>
-    
 
 
-         <section id="postThree" class="uploading-str">
-            <div class="str-user-info">
-                <div class="str-user-info-left">
-                    <a href="#"><img id="user-profile-img" src="imgage/st7.jpg" alt=""></a>
-                    <h2 class="user-profile-name">
-                        Mohammad <span class="post-info-title">
-                            update his profile picture.
-                        </span> <br> <span class="post-time-info">
-                            13 hours ago <i class="fa-solid fa-circle-small middot"></i>
-                            <i id="frnDot" class="fa-solid fa-user-group friendsDot"></i>
-                            <i id="pubDot" class="fa-solid fa-earth-americas friendsDot publicDot"></i>
-                        </span>
-                    </h2>
-                </div>
-                <div class="str-user-info-right">
-                    <a href="#"><i class="fa-solid fa-ellipsis post-closing-icon"></i></a>
-                    <a onclick="checkClose3()" href="#"><i class="fa-regular fa-xmark post-closing-icon"></i></a>
-                </div>
+     <section  id="postTwo" class="uploading-str">
+        <div class="str-user-info">
+            <div class="str-user-info-left">
+                <a href="#"><img id="user-profile-img" src="imgage/st7.jpg" alt=""></a>
+                <h2 class="user-profile-name">
+                    Mohammad <span class="post-info-title">
+                        update his profile picture.
+                    </span> <br> <span class="post-time-info">
+                        13 hours ago <i class="fa-solid fa-circle-small middot"></i>
+                        <i id="frnDot" class="fa-solid fa-user-group friendsDot"></i>
+                        <i id="pubDot" class="fa-solid fa-earth-americas friendsDot publicDot"></i>
+                    </span>
+                </h2>
             </div>
-            <div class="post-title-con">
-                <h2 class="post-title">彡.অনূভু’তি! গু’লো! <br>
-                    মানুষ’কে! জানানো’র! চে’য়ে <br>
-                    ডাইরি’তে লি’খে! রা’খা! ভা’লো!!</h2>
-                <h2 class="post-title"></h2>
+            <div class="str-user-info-right">
+                <a href="#"><i class="fa-solid fa-ellipsis post-closing-icon"></i></a>
+                <a onclick="checkClose2()" href="#"><i class="fa-regular fa-xmark post-closing-icon"></i></a>
             </div>
-            <div class="post-image-str">
-                <a class="post-img-a" href="#"><img id="post-img" src="imgage/user4.png" alt=""></a>
+        </div>
+        <div class="post-title-con">
+            <h2 class="post-title">Everyone's life is beautiful, <br>
+                                  some from the beginning <br>
+                                  and some at the end...........🙂</h2>
+            <h2 class="post-title"></h2>
+        </div>
+        <div class="post-image-str">
+            <a class="post-img-a" href="#"><img id="post-img" src="imgage/user2.png" alt=""></a>
+        </div>
+        <div class="rections-str">
+           <div class="who-give-react">
+            <a class="rec-back recat-bg" href="#"><img class="rec-icon wow-icon" src="imgage/wow.png" alt=""></a>
+            <a class="rec-back recat-bg1" href="#"><img class="rec-icon love-icon" src="imgage/love.png" alt=""></a>
+            <a class="rec-back recat-bg2" href="#"><img class="rec-icon like-icon" src="imgage/like.png" alt=""></a>
+          
+            <a href="#" class="peoples-name">Cristiano Ronaldo, Leo Messi and 1.6M others</a>
+             </div>
+           <div class="how-comment">
+            <a href="#" class="peoples-name">
+                221K comments &nbsp; 76K shares
+            </a>
             </div>
-            <div class="rections-str">
-               <div class="who-give-react">
-                <a class="rec-back recat-bg" href="#"><img class="rec-icon wow-icon" src="imgage/wow.png" alt=""></a>
-                <a class="rec-back recat-bg1" href="#"><img class="rec-icon love-icon" src="imgage/love.png" alt=""></a>
-                <a class="rec-back recat-bg2" href="#"><img class="rec-icon like-icon" src="imgage/like.png" alt=""></a>
-              
-                <a href="#" class="peoples-name">Cristiano Ronaldo, Leo Messi and 190.6M others</a>
-                 </div>
-               <div class="how-comment">
-                <a href="#" class="peoples-name">
-                    23.5M comments &nbsp; 499K shares
-                </a>
-                </div>
-            </div>
-            <div class="like-str">
-                <a class="like-giving-a" href="#">
-                    <i class="fa-regular fa-thumbs-up ok"></i>
-                    Like</a>
-                <a class="like-giving-a" href="#">
-                    <i class="fa-regular fa-comment ok"></i>
-                    Comment</a>
-                <a class="like-giving-a" href="#">
-                    <i class="fa-regular fa-share ok"></i>
-                    Share</a>
-            </div>
-            <div class="view-comments-str">
-                <h1 class="view-comment-text">View more comments</h1>
-                <section class="comenting-user">
-                     <img class="cr7" src="imgage/arijit.jpg" alt="">
-                     <section class="commenting-user-info">
-                        <div class="commenting-user-div">
-                            <a href="#" class="commenting-user-name">Arijit Singh 
-                                <img class="verified" src="imgage/verified.png" alt="">
-                            </a>
-                            <h4 class="using-comment">
-                                Awesome😲!
-                            </h4>
-                        </div>
-                        <div class="comment-details">
-                            <a id="text-light" href="#">5 h</a>
-                            <a href="#">Like</a>
-                            <a href="#">Reply</a>
-                            <a href="#">Share</a>
-                            <div id="react-an">
-                                <a id="text-light2" href="#">
-                                    <span> 4.1M</span>
-                                   
-                                         <div id="com-rec" class="who-give-react">
-                                          <a class="rec-back recat-bg" href="#"><img class="rec-icon wow-icon" src="imgage/wow.png" alt=""></a>
-                                          <a class="rec-back recat-bg1" href="#"><img class="rec-icon love-icon" src="imgage/love.png" alt=""></a>
-                                          <a class="rec-back recat-bg2" href="#"><img class="rec-icon like-icon" src="imgage/like.png" alt=""></a>
-                                        
-                                      
-                                           </div>
-                                        
+        </div>
+        <div class="like-str">
+            <a class="like-giving-a" href="#">
+                <i class="fa-regular fa-thumbs-up ok"></i>
+                Like</a>
+            <a class="like-giving-a" href="#">
+                <i class="fa-regular fa-comment ok"></i>
+                Comment</a>
+            <a class="like-giving-a" href="#">
+                <i class="fa-regular fa-share ok"></i>
+                Share</a>
+        </div>
+        <div class="view-comments-str">
+            <h1 class="view-comment-text">View more comments</h1>
+            <section class="comenting-user">
+                 <img class="cr7" src="imgage/leo.jpg" alt="">
+                 <section class="commenting-user-info">
+                    <div class="commenting-user-div">
+                        <a href="#" class="commenting-user-name">Leo Messi 
+                            <img class="verified" src="imgage/verified.png" alt="">
+                        </a>
+                        <h4 class="using-comment">
+                            fantastic picture😲!
+                        </h4>
+                    </div>
+                    <div class="comment-details">
+                        <a id="text-light" href="#">2 h</a>
+                        <a href="#">Like</a>
+                        <a href="#">Reply</a>
+                        <a href="#">Share</a>
+                        <div id="react-an">
+                            <a id="text-light2" href="#">
+                                <span> 1.1M</span>
+                               
+                                     <div id="com-rec" class="who-give-react">
+                                      <a class="rec-back recat-bg" href="#"><img class="rec-icon wow-icon" src="imgage/wow.png" alt=""></a>
+                                      <a class="rec-back recat-bg1" href="#"><img class="rec-icon love-icon" src="imgage/love.png" alt=""></a>
+                                      <a class="rec-back recat-bg2" href="#"><img class="rec-icon like-icon" src="imgage/like.png" alt=""></a>
+                                    
                                   
-                                 </a>
-                            </div>
+                                       </div>
+                                    
+                              
+                             </a>
                         </div>
-                        <a class="reply-text" href="#">View all 9.8M reply</a>
-                        <div class="oo"></div>
-                     </section>
-                </section>
+                    </div>
+                    <a class="reply-text" href="#">View all 878K reply</a>
+                    <div class="oo"></div>
+                 </section>
+            </section>
+        </div>
+        <div class="comments-str">
+          <a href="#">
+            <img class="comment-user-img" src="imgage/user.jpg" alt="">
+            <div class="down-con2 down-con-comment-dot">
+                <i class="fa-solid fa-angle-down down-icon"></i>
             </div>
-            <div class="comments-str">
-              <a href="#">
-                <img class="comment-user-img" src="imgage/user.jpg" alt="">
-                <div class="down-con2 down-con-comment-dot">
-                    <i class="fa-solid fa-angle-down down-icon"></i>
-                </div>
+        </a>
+          <div id="commentHeight2" class="comment-promt">
+            <section class="promt-com-left">
+                <input onclick="moreHeight2()" onkeypress="keyUp2()"
+               class="comment-input" type="text" placeholder="Comment as Mohammad Imran">
+            </section>
+            <section id="emojiPadding2" class="promt-com-right">
+                <section class="emoji-left">
+                    <a href="#" class="comment-promt-a for-margin"><i class="fa-light fa-face-holding-back-tears"></i></a>
+
+                <a href="#" class="comment-promt-a for-margin"><i class="fa-light fa-face-smile"></i></a>
+
+                <a href="#" class="comment-promt-a for-margin"><i class="fa-light fa-camera"></i></a>
+
+                <a href="#" class="comment-promt-a for-margin"><i class="fa-light fa-gif"></i></a>
+
+                <a href="#" class="comment-promt-a"><i class="fa-light fa-note-sticky"></i></a>
+                </section>
+
+                <a id="sendComment2" href="#" class="comment-promt-a"><i id="amni2" class="fa-solid fa-paper-plane-top"></i></a>
+            </section>
+
+          </div>
+        </div>
+        
+ </section>
+
+
+
+     <section id="postThree" class="uploading-str">
+        <div class="str-user-info">
+            <div class="str-user-info-left">
+                <a href="#"><img id="user-profile-img" src="imgage/st7.jpg" alt=""></a>
+                <h2 class="user-profile-name">
+                    Mohammad <span class="post-info-title">
+                        update his profile picture.
+                    </span> <br> <span class="post-time-info">
+                        13 hours ago <i class="fa-solid fa-circle-small middot"></i>
+                        <i id="frnDot" class="fa-solid fa-user-group friendsDot"></i>
+                        <i id="pubDot" class="fa-solid fa-earth-americas friendsDot publicDot"></i>
+                    </span>
+                </h2>
+            </div>
+            <div class="str-user-info-right">
+                <a href="#"><i class="fa-solid fa-ellipsis post-closing-icon"></i></a>
+                <a onclick="checkClose3()" href="#"><i class="fa-regular fa-xmark post-closing-icon"></i></a>
+            </div>
+        </div>
+        <div class="post-title-con">
+            <h2 class="post-title">彡.অনূভু’তি! গু’লো! <br>
+                মানুষ’কে! জানানো’র! চে’য়ে <br>
+                ডাইরি’তে লি’খে! রা’খা! ভা’লো!!</h2>
+            <h2 class="post-title"></h2>
+        </div>
+        <div class="post-image-str">
+            <a class="post-img-a" href="#"><img id="post-img" src="imgage/user4.png" alt=""></a>
+        </div>
+        <div class="rections-str">
+           <div class="who-give-react">
+            <a class="rec-back recat-bg" href="#"><img class="rec-icon wow-icon" src="imgage/wow.png" alt=""></a>
+            <a class="rec-back recat-bg1" href="#"><img class="rec-icon love-icon" src="imgage/love.png" alt=""></a>
+            <a class="rec-back recat-bg2" href="#"><img class="rec-icon like-icon" src="imgage/like.png" alt=""></a>
+          
+            <a href="#" class="peoples-name">Cristiano Ronaldo, Leo Messi and 190.6M others</a>
+             </div>
+           <div class="how-comment">
+            <a href="#" class="peoples-name">
+                23.5M comments &nbsp; 499K shares
             </a>
-              <div id="commentHeight3" class="comment-promt">
-                <section class="promt-com-left">
-                    <input onclick="moreHeight3()" onkeypress="keyUp3()"
-                   class="comment-input" type="text" placeholder="Comment as Mohammad Imran">
-                </section>
-                <section id="emojiPadding3" class="promt-com-right">
-                    <section class="emoji-left">
-                        <a href="#" class="comment-promt-a for-margin"><i class="fa-light fa-face-holding-back-tears"></i></a>
-
-                    <a href="#" class="comment-promt-a for-margin"><i class="fa-light fa-face-smile"></i></a>
-
-                    <a href="#" class="comment-promt-a for-margin"><i class="fa-light fa-camera"></i></a>
-
-                    <a href="#" class="comment-promt-a for-margin"><i class="fa-light fa-gif"></i></a>
-
-                    <a href="#" class="comment-promt-a"><i class="fa-light fa-note-sticky"></i></a>
-                    </section>
-
-                    <a id="sendComment3" href="#" class="comment-promt-a"><i id="amni3" class="fa-solid fa-paper-plane-top"></i></a>
-                </section>
-
-              </div>
             </div>
-            
-     </section>
+        </div>
+        <div class="like-str">
+            <a class="like-giving-a" href="#">
+                <i class="fa-regular fa-thumbs-up ok"></i>
+                Like</a>
+            <a class="like-giving-a" href="#">
+                <i class="fa-regular fa-comment ok"></i>
+                Comment</a>
+            <a class="like-giving-a" href="#">
+                <i class="fa-regular fa-share ok"></i>
+                Share</a>
+        </div>
+        <div class="view-comments-str">
+            <h1 class="view-comment-text">View more comments</h1>
+            <section class="comenting-user">
+                 <img class="cr7" src="imgage/arijit.jpg" alt="">
+                 <section class="commenting-user-info">
+                    <div class="commenting-user-div">
+                        <a href="#" class="commenting-user-name">Arijit Singh 
+                            <img class="verified" src="imgage/verified.png" alt="">
+                        </a>
+                        <h4 class="using-comment">
+                            Awesome😲!
+                        </h4>
+                    </div>
+                    <div class="comment-details">
+                        <a id="text-light" href="#">5 h</a>
+                        <a href="#">Like</a>
+                        <a href="#">Reply</a>
+                        <a href="#">Share</a>
+                        <div id="react-an">
+                            <a id="text-light2" href="#">
+                                <span> 4.1M</span>
+                               
+                                     <div id="com-rec" class="who-give-react">
+                                      <a class="rec-back recat-bg" href="#"><img class="rec-icon wow-icon" src="imgage/wow.png" alt=""></a>
+                                      <a class="rec-back recat-bg1" href="#"><img class="rec-icon love-icon" src="imgage/love.png" alt=""></a>
+                                      <a class="rec-back recat-bg2" href="#"><img class="rec-icon like-icon" src="imgage/like.png" alt=""></a>
+                                    
+                                  
+                                       </div>
+                                    
+                              
+                             </a>
+                        </div>
+                    </div>
+                    <a class="reply-text" href="#">View all 9.8M reply</a>
+                    <div class="oo"></div>
+                 </section>
+            </section>
+        </div>
+        <div class="comments-str">
+          <a href="#">
+            <img class="comment-user-img" src="imgage/user.jpg" alt="">
+            <div class="down-con2 down-con-comment-dot">
+                <i class="fa-solid fa-angle-down down-icon"></i>
+            </div>
+        </a>
+          <div id="commentHeight3" class="comment-promt">
+            <section class="promt-com-left">
+                <input onclick="moreHeight3()" onkeypress="keyUp3()"
+               class="comment-input" type="text" placeholder="Comment as Mohammad Imran">
+            </section>
+            <section id="emojiPadding3" class="promt-com-right">
+                <section class="emoji-left">
+                    <a href="#" class="comment-promt-a for-margin"><i class="fa-light fa-face-holding-back-tears"></i></a>
 
+                <a href="#" class="comment-promt-a for-margin"><i class="fa-light fa-face-smile"></i></a>
+
+                <a href="#" class="comment-promt-a for-margin"><i class="fa-light fa-camera"></i></a>
+
+                <a href="#" class="comment-promt-a for-margin"><i class="fa-light fa-gif"></i></a>
+
+                <a href="#" class="comment-promt-a"><i class="fa-light fa-note-sticky"></i></a>
+                </section>
+
+                <a id="sendComment3" href="#" class="comment-promt-a"><i id="amni3" class="fa-solid fa-paper-plane-top"></i></a>
+            </section>
+
+          </div>
+        </div>
+        
+ </section>
+
+     </section>
 
     
        
@@ -800,7 +822,7 @@
 
 
 
-   <div class="main-body-right">
+   <div id="blurRight" class="main-body-right">
 
       <section class="page-profile">
         <section class="page-title-contain">

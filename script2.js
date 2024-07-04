@@ -50,7 +50,7 @@ function seeLessItem() {
            
       const seeButton = document.getElementById("seeMoreDisplay") 
           seeButton.style.display = "flex"    
-    console.log(seeButton)
+    
 }
 
 
@@ -184,7 +184,7 @@ function moreHeight(){
         emoji.style.paddingBottom = "10px"
         emoji.style.width ="100%"
         sendEmoji.style.display = "flex"
-    console.log(sendEmoji)
+ 
 }
 
 
@@ -195,7 +195,7 @@ function keyUp() {
           anchor.style.opacity ="100%"
           anchor.style.cursor = "pointer"
          anchorIcon.classList.add("amni")
-    console.log(anchorIcon)
+  
 }
 
 
@@ -216,7 +216,7 @@ function moreHeight2(){
         emoji.style.width ="100%"
         sendEmoji.style.display = "flex"
     
-    console.log(sendEmoji)
+   
 }
 
 
@@ -227,7 +227,7 @@ function keyUp2() {
           anchor.style.opacity ="100%"
           anchor.style.cursor = "pointer"
          anchorIcon.classList.add("amni")
-    console.log(anchorIcon)
+   
 }
 
 
@@ -244,7 +244,7 @@ function moreHeight3(){
         emoji.style.width ="100%"
         sendEmoji.style.display = "flex"
     
-    console.log(sendEmoji)
+
 }
 
 
@@ -255,21 +255,222 @@ function keyUp3() {
           anchor.style.opacity ="100%"
           anchor.style.cursor = "pointer"
          anchorIcon.classList.add("amni")
-    console.log(anchorIcon)
+ 
 }
 
 function checkClose() {
     const closePost = document.getElementById("postOne")
           closePost.style.display = "none"
-    console.log(closePost)
+  
 }
 function checkClose2() {
     const closePost = document.getElementById("postTwo")
           closePost.style.display = "none"
-    console.log(closePost)
+ 
 }
 function checkClose3() {
     const closePost = document.getElementById("postThree")
           closePost.style.display = "none"
-    console.log(closePost)
+  
+}
+
+function checkAllC() {
+    const colorSwitch = document.getElementById("color-bg-dis-sec")
+    const colorSwitch$ = document.getElementById("Aa")
+         colorSwitch.style.transform = "translateX(0px)"
+         colorSwitch.style.transition = "0.3s"
+         colorSwitch$.style.display = "none"
+    
+   
+}
+function checkAllP() {
+    const colorSwitch = document.getElementById("color-bg-dis-sec")
+    const colorSwitch$ = document.getElementById("Aa")
+         colorSwitch.style.transform = "translateX(-500px)"
+         colorSwitch.style.transition = "0.3s"
+           colorSwitch$.style.display = "block"
+    colorSwitch$.classList.add("js-class")
+}
+
+function checkAllH1() {
+    const popBg = document.getElementById("postPromt")
+    const text = document.getElementById("textArea")
+       popBg.classList.add("js-pop-bg1")
+       popBg.style.height = "500px"
+       popBg.style.textAlign = "center"
+       text.style.height = "30%"
+       text.classList.add("js-placeholder")
+       text.classList.add("js-main-text")
+
+      
+       popBg.classList.remove("js-pop-bg2")
+       popBg.classList.remove("js-pop-bg3")
+       popBg.classList.remove("js-pop-bg4")
+       popBg.classList.remove("js-pop-bg5")
+       popBg.classList.remove("js-pop-bg6")
+   
+}
+function checkAllH2() {
+    const popBg = document.getElementById("postPromt")
+    const text = document.getElementById("textArea")
+       popBg.classList.add("js-pop-bg2")
+       popBg.style.height = "500px"
+       popBg.style.textAlign = "center"
+       text.style.height = "30%"
+       text.classList.add("js-placeholder")
+       text.classList.add("js-main-text")
+
+       popBg.classList.remove("js-pop-bg1")
+      
+       popBg.classList.remove("js-pop-bg3")
+       popBg.classList.remove("js-pop-bg4")
+       popBg.classList.remove("js-pop-bg5")
+       popBg.classList.remove("js-pop-bg6")
+
+}
+function checkAllH3() {
+    const popBg = document.getElementById("postPromt")
+    const text = document.getElementById("textArea")
+       popBg.classList.add("js-pop-bg3")
+       popBg.style.height = "500px"
+       popBg.style.textAlign = "center"
+       text.style.height = "30%"
+       text.classList.add("js-placeholder")
+       text.classList.add("js-main-text")
+
+       popBg.classList.remove("js-pop-bg1")
+       popBg.classList.remove("js-pop-bg2")
+     
+       popBg.classList.remove("js-pop-bg4")
+       popBg.classList.remove("js-pop-bg5")
+       popBg.classList.remove("js-pop-bg6")
+
+}
+function checkAllH4() {
+    const popBg = document.getElementById("postPromt")
+    const text = document.getElementById("textArea")
+       popBg.classList.add("js-pop-bg4")
+       popBg.style.height = "500px"
+       popBg.style.textAlign = "center"
+       text.style.height = "30%"
+       text.classList.add("js-placeholder")
+       text.classList.add("js-main-text")
+
+       popBg.classList.remove("js-pop-bg1")
+       popBg.classList.remove("js-pop-bg2")
+       popBg.classList.remove("js-pop-bg3")
+      
+       popBg.classList.remove("js-pop-bg5")
+       popBg.classList.remove("js-pop-bg6")
+
+}
+function checkAllH5() {
+    const popBg = document.getElementById("postPromt")
+    const text = document.getElementById("textArea")
+       popBg.classList.add("js-pop-bg5")
+       popBg.style.height = "500px"
+       popBg.style.textAlign = "center"
+       text.style.height = "30%"
+       text.classList.add("js-placeholder")
+       text.classList.add("js-main-text")
+
+       popBg.classList.remove("js-pop-bg1")
+       popBg.classList.remove("js-pop-bg2")
+       popBg.classList.remove("js-pop-bg3")
+       popBg.classList.remove("js-pop-bg4")
+  
+       popBg.classList.remove("js-pop-bg6")
+
+}
+function checkAllH6() {
+    const popBg = document.getElementById("postPromt")
+    const text = document.getElementById("textArea")
+       popBg.classList.add("js-pop-bg6")
+       popBg.style.height = "500px"
+       popBg.style.textAlign = "center"
+       text.style.height = "30%"
+       text.classList.add("js-placeholder")
+       text.classList.add("js-main-text")
+
+       popBg.classList.remove("js-pop-bg1")
+       popBg.classList.remove("js-pop-bg2")
+       popBg.classList.remove("js-pop-bg3")
+       popBg.classList.remove("js-pop-bg4")
+       popBg.classList.remove("js-pop-bg5")
+      
+
+}
+
+function checkAllV() {
+    const popBg = document.getElementById("postPromt")
+    const text = document.getElementById("textArea")
+           text.classList.remove("js-placeholder")
+           text.classList.remove("js-main-text")
+           popBg.classList.remove("js-pop-bg1")
+           popBg.classList.remove("js-pop-bg2")
+           popBg.classList.remove("js-pop-bg3")
+           popBg.classList.remove("js-pop-bg4")
+           popBg.classList.remove("js-pop-bg5")
+           popBg.classList.remove("js-pop-bg6")
+           text.style.height = "100%"
+           popBg.style.height = "120px"
+   
+}
+
+
+function checkAllKey() {
+    const nextButton = document.getElementById("popNextBtn") 
+         nextButton.classList.add("js-next-btn-color")
+   
+}
+
+function checkPop() {
+    const pop = document.getElementById("uploadingPopup")
+    const Left = document.getElementById("blurLeft")
+    const Right = document.getElementById("blurRight")
+    const MainPost = document.getElementById("mainPostStr")
+    const header = document.getElementById("header")
+    const Story = document.getElementById("blur1")
+    const Story2 = document.getElementById("blur2")
+    const Story3 = document.getElementById("blur3")
+    const body = document.getElementById("body")
+ 
+      
+          Story.classList.add("blur")
+          Story2.classList.add("blur")
+          Story3.classList.add("blur")
+          Left.classList.add("blur")
+          Right.classList.add("blur")
+          MainPost.classList.add("blur")
+          header.classList.add("blur")
+          body.style.overflowY = "hidden"
+
+          pop.style.display = "flex"
+          pop.classList.add("js-popup-cart-anim")
+   
+}
+
+function checkClose() {
+    const pop = document.getElementById("uploadingPopup")
+          pop.style.display = "none"
+   
+
+          const Left = document.getElementById("blurLeft")
+          const Right = document.getElementById("blurRight")
+          const MainPost = document.getElementById("mainPostStr")
+          const header = document.getElementById("header")
+          const Story = document.getElementById("blur1")
+          const Story2 = document.getElementById("blur2")
+          const Story3 = document.getElementById("blur3")
+          const body = document.getElementById("body")
+       
+          
+                Story.classList.remove("blur")
+                Story2.classList.remove("blur")
+                Story3.classList.remove("blur")
+                Left.classList.remove("blur")
+                Right.classList.remove("blur")
+                MainPost.classList.remove("blur")
+                header.classList.remove("blur")
+                body.style.overflowY = "scroll"
 }
